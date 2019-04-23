@@ -1,0 +1,87 @@
+/*
+
+
+button
+
+
+------------------------------------------------------------------------*/
+
+:root {
+	--button-border-radius: 1px;
+	--button-padding: 16px 32px;
+	--button-text-transform: uppercase;
+	--button-text-color: #FFF;
+	--button-max-height: 48px;
+	--button-state-hover-opacity: 0.8;
+	--button-state-hover-color: var(--primary);
+	--button-state-active-outline: #93D1FF;
+
+
+}
+
+
+button,
+button[type="submit"],
+input[type="submit"],
+.button {
+	line-height: 1.6;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 0.4px;
+	font-weight: 700;
+	font-size: 1em;
+	outline: none;
+	visibility: visible;
+	border: none;
+	white-space: normal;
+	background: var(--primary);
+	color: var(--button-text-color);
+	text-transform: var(--button-text-transform);
+	border-radius: var(--button-border-radius);
+	max-height: var(--button-max-height);
+	padding: var(--button-padding);
+}
+
+
+
+button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+.button:hover {
+	background: var(--primary);
+	opacity: var(--button-state-hover-opacity);
+}
+
+button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+.button:hover {
+	background: var(--button-state-hover-color);
+}
+
+button:active,
+button[type="submit"]:active,
+input[type="submit"]:active,
+.button:active {
+	outline: 6px solid var(--button-state-active-outline);
+}
+
+.is-large {
+	width: 300px;
+	margin: auto;
+}
+
+
+.link,
+a.link {
+	color: var(--primary);
+	outline: none;
+	text-decoration: none;
+}
+
+.link:hover,
+a.link:hover {
+	outline: none;
+	text-decoration: none;
+
+}

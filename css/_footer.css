@@ -1,0 +1,85 @@
+
+/*
+#footer
+--------------------------------  */
+
+#footer {
+	padding: 64px 0px 0px;
+	color: #fff;
+	/* --footer-background: #151515; */
+	background: var(--secondary);
+}
+
+#footer .column {
+	--insert-justify-content: start;
+	/*			--insert-align-items: flex-end;*/
+	--insert-min-height: 200px;
+	--insert-max-width: 100px;
+	--img-max-height: 100px;
+}
+
+
+#footer h5 {
+	margin: 16px 0;
+}
+
+#footer .mission {
+	max-width: 200px;
+}
+
+.socialIcons ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.socialIcons ul li {
+	margin: 0 16px;
+}
+
+.mission {
+	--insert-text-align: center;
+}
+
+.bottombar {
+	background: #000;
+	width: 100%;
+	max-width: 100%;
+}
+
+.footer-menu {
+	background: var(--footer-background);
+	width: 100%;
+	max-width: 100%;
+}
+
+.footer-menu a {
+	color: #fff;
+}
+
+
+.footer-menu ul,
+.bottombar ul {
+	padding: 8px 0;
+	max-width: var(--page-max-width);
+	margin: auto;
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

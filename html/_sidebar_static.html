@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home| Car Dealer</title>
+	<link href="/src/css/index.css" rel="stylesheet" type="text/css" media="screen">
+	<style>
+		.form-module {}
+
+		#site {
+			background: #fdfdfd;
+			height: 100vh;
+			min-height: 600px;
+		}
+
+
+		.page {
+			display: grid;
+			grid-template-rows: 55px calc(100vh - 55px);
+			/* height limitation on second row */
+			grid-template-columns: 20vh auto;
+			grid-template-areas: "nav header" "nav content";
+		}
+
+		.nav {
+			grid-area: nav;
+			background-color: aqua;
+		}
+
+		.header {
+			grid-area: header;
+			background-color: grey;
+		}
+
+		.content {
+			grid-area: content;
+			background-color: red;
+			overflow: auto;
+			/* overflow condition on parent */
+		}
+
+		article {
+			height: 1000px;
+			/* height set on child; triggers scroll */
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav id="navbar"></nav>
+
+	<main id="site">
+
+		<section class="section">
+
+			<div class="grid">
+
+				<div class="column">
+
+					<div class="page">
+						<div class="nav">Side nav</div>
+						<div class="header">Header</div>
+						<div class="content">
+							<article>
+								<!-- new section for content -->
+								<h1>title</h1>
+							</article>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer id="footer"></footer>
+
+
+	<script src="/src/js/ui-3-landing.js"></script>
+
+	<script src="/src/js/_form.js"></script>
+</body>
+
+</html>

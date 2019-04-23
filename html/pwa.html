@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Andrew rico">
+	<meta name="description" content="UI-3 Framework">
+	<meta name="theme-color" content="#008000" />
+	<title>Home</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="manifest" href="src/pwa/manifiest.json">
+	<link href="/src/css/ui-3-core-v1.0.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+
+
+
+	<navbar id="navbar"></navbar>
+
+	<section class="section">
+
+		<div class="grid">
+
+			<div class="column">
+
+				<h1>Hello World!!!</h1>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer id="footer"></footer>
+
+
+
+
+	<script src="src/js/partials/navbar.js"></script>
+	<script src="src/js/partials/footer.js"></script>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('scr/wpa/server-worker.js')
+				.then(function() {
+					console.log('Service Worker Registered');
+				});
+		}
+	</script>
+
+	<script>
+		const messaging = firebase.messaging();
+
+		messaging.requestPermission()
+			.then(function() {
+				console.log('Notification permission granted.');
+				return messaging.getToken();
+			})
+			.then(function(token) {
+				console.log(token);
+			})
+			.catch(function(err) {
+				console.log('Unable to get permission to notify.', err);
+			})
+	</script>
+</body>
+
+</html>

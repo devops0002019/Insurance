@@ -1,0 +1,151 @@
+ 
+ #page i{
+    color:var(--secondary);
+ }
+ 
+ .header-title {
+/* --insert-background:red; */
+
+--insert-align-items: start !important;
+ }
+ 
+ 
+ .header-title p:nth-child(1) {
+    font-size: 3em;
+    letter-spacing: 0em;
+    color: var(--secondary);
+}
+
+.header-title p:nth-child(2) {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 7em;
+    letter-spacing: 2px;
+    color: var(--secondary);
+} 
+
+
+ .webfont-huge {
+    font-size: 8em;
+    text-shadow: 1px 1px #000 !important;
+    color: var(--secondary) !important;
+    font-size: 10em !important;
+}
+
+
+
+
+
+
+
+.icon-stars  {
+    width: 100px;
+    align-items: flex-start !important;
+}
+
+.icon-stars i {
+    text-shadow: 1px 1px #000 !important;
+    color: orange !important;
+}
+
+h2 {
+    color: var(--secondary) !important;
+}
+
+
+
+
+
+
+[class*="proBox1"] {
+
+
+    --insert-max-height: 450px !important;
+    --insert-padding: 32px;
+    --insert-border-radius: 2px;
+    --insert-box-shadow: var(--shadow);
+    --h3-color: var(--primary);
+    --h3-font-size: 1.4em;
+    --h3-font-weight: 600;
+    --h3-text-align: center;
+    --p-color: var(--black);
+    --p-font-size: 1.2em;
+    --fa-color: var(--tertiary);
+    --fa-font-size: 3.6rem;
+    --fa-text-align: center;
+    --fa-text-shadow: 1px 1px #000 !important;
+}
+
+.proBox1>* {
+    margin: 16px 0 !important;
+} 
+
+
+.listBox {
+    --h3-color: var(--primary);
+    --h3-font-size: 1.4em;
+    --h3-font-weight: 600;
+    --h3-text-align: left;
+    --p-color: var(--black);
+    --p-font-size: 1.2em;
+}
+
+.listBox li {
+    margin: 32px 0;
+}
+
+[class*="deep-img"].homeId1 {
+    background-image: var(--bg-img-2) !important;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+input[type=text] {
+    padding: 16px 32px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color: #333;
+}
+
+
+
+select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding: 16px 32px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+

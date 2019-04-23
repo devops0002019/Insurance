@@ -1,0 +1,55 @@
+/* loads default */
+@import url("default.css");
+
+/* loads _form */
+@import url('_form.css');
+
+/* loads icons */
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+/* loads fonts */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif");
+
+/*Loads Button.css*/
+@import url('_button.css');
+
+/*Loads Embed.css*/
+@import url('_embed.css');
+
+/*Loads Footer.css*/
+@import url('_footer.css');
+
+/*Loads Header.css*/
+@import url('_header.css');
+
+/*Loads Navbar.css*/
+@import url('_navbar-old.css');
+
+/*Loads _inventory.css*/
+@import url('_inventory.css');
+
+/*Loads Template Literals.css*/
+@import url('_template_literals.css');
+
+/*Loads Library.css*/
+@import url('_library.css');
+
+/* loads _responsive_text */
+@import url("_responsive_text.css");
+
+/* loads _utilitiesore */
+@import url("_utilities.css");
+
+/* loads _grid */
+@import url("_grid.css");
+
+/* loads _grid */
+@import url("_module.css");
+
+/* loads stylesheet */
+@import url("stylesheet.css");
+
+/* loads core */
+@import url("ui-3-core-v1.0.css");
+
+

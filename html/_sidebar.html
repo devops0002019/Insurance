@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Andrew rico">
+	<meta name="description" content="UI-3 Framework">
+	<title>Inventory Literals</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link href="css/carDealer.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="/src/css/enqueue-ui-3.css" rel="stylesheet" type="text/css" media="screen">
+	<style>
+		.carInStock {
+			--insert-border: 1px solid red;
+			--insert-width: auto;
+		}
+
+
+
+
+
+		.sidebar-content {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+
+		@media only screen and (min-width: 768px) {
+			.grid-sidebar {
+				width: 100%;
+				margin: auto;
+				max-width: var(--page-max-width);
+				display: grid;
+				grid-gap: 32px;
+				grid-template-columns: 1fr 300px;
+			}
+
+			.sidebar-content-sticky {
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+				order: 1;
+				border: 1px solid blue;
+				width: 300px;
+				height: 50vh;
+				margin: 0 !important;
+				top: 0;
+			}
+		}
+
+		.main-content {
+			border: 2px solid black;
+			width: 100%;
+			height: 100%;
+		}
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<section class="section">
+
+		<div class="grid-sidebar">
+
+			<div class="sidebar-content-sticky">
+
+				<div class="column sidebar">
+
+					<h1>Sidebar Fixed</h1>
+
+				</div>
+
+			</div>
+
+			<div class="main-content" id="inventory"></div>
+
+		</div>
+
+	</section>
+
+	<script src="js/inventory.js"></script>
+
+</body>
+
+</html>

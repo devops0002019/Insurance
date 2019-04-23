@@ -1,0 +1,71 @@
+
+
+
+
+.is-fixed {
+	background-attachment: fixed;
+}
+
+
+
+
+
+.column-1-1 ,
+.fullrow {
+	text-align: center;
+	grid-column: 1 / -1;
+}
+
+
+
+
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+
+.ta-center {
+	text-align: center;
+}
+
+
+
+
+.font-1rem {
+	font-size: 1rem;
+}
+
+.font-2rem {
+	font-size: 2rem;
+}
+
+.font-3rem {
+	font-size: 3rem;
+}
+
+.font-4rem {
+	font-size: 4rem;
+}
+
+
+
+
+
+
+.listing {
+	width: 100%;
+}
