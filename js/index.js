@@ -24,7 +24,7 @@ function navbar_template(nav) {
 	<div class="navbar">
  
 		<figure class="brand with-text">
-			<a href="#">
+			<a href="index.html">
 				<h1> ${nav.brand} </h1>
 			</a>
 		</figure>
@@ -53,15 +53,33 @@ const footer_data = [
 	{
 		url1:	  ["https://www.facebook.com"],
 		txt1: 	  ["www.mylinks.com"],
+
+		url2:	  ["https://www.facebook.com"],
+		txt2: 	  ["www.mylinks.com"],
+
+		url3:	  ["https://www.facebook.com"],
+		txt3: 	  ["www.mylinks.com"],
+
+		url4:	  ["https://www.facebook.com"],
+		txt4: 	  ["www.mylinks.com"],
     },
 ];
 // Build Template
 function footer_template(foot) {
  	return `
-	<div class="grid set-cols-41">
+	<div class="grid set-cols-4">
 
 		<ul class="column">
-			<li><a href="${foot.url1}">${column.txt1}</a></li>
+			<li><a href="${foot.url1}">${foot.txt1}</a></li>
+		</ul>
+		<ul class="column">
+			<li><a href="${foot.url3}">${foot.txt2}</a></li>
+		</ul>
+		<ul class="column">
+			<li><a href="${foot.url4}">${foot.txt3}</a></li>
+		</ul>
+		<ul class="column">
+			<li><a href="${foot.url4}">${foot.txt4}</a></li>
 		</ul>
 
    `

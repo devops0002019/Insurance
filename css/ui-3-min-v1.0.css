@@ -94,7 +94,7 @@ a.link:hover {
 --------------------------------  */
 
 #footer {
-	padding: 64px 0px 0px;
+	padding: 64px 0px;
 	color: #fff;
 	/* --footer-background: #151515; */
 	background: var(--secondary);

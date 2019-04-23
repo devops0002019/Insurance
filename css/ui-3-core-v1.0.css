@@ -11,7 +11,7 @@ This is the stylesheet that master the UI-3 CORE
 
 
 :root {
-	--primary: #908f91;
+	--primary: #00108a;
 	--secondary: #00108a;
 	--tertiary: rgb(242, 242, 242);
 	--quaternary: #FAFAFA;
@@ -45,7 +45,6 @@ This is the stylesheet that master the UI-3 CORE
 	--yellow: yellow;
 	--indigo: indigo;
 	--fuchsia: fuchsia;
-
 	--cyan: cyan;
 	--aqua: aqua;
 	--aquamarine: aquamarine;
