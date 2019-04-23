@@ -12,9 +12,6 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/ui-3-min-v1.0.css" rel="stylesheet" type="text/css" media="screen">
-
-
-
 </head>
 
 
@@ -42,25 +39,22 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <label for="options">
-                                                <select name="options" onchange="document.getElementById('form-submit').href = this.value;">
-                                                    <option value="">Select</option>
-                                                    <option value="index.html">Health</option>
-                                                    <option value="life.html">Life</option>
-                                                    <option value="car.html">Car</option>
+                                            <label for="cars">
+                                                <select name="cars">
+                                                    <option value="volvo">Health Insurance</option>
+                                                    <option value="saab">Car Insurance</option>
+                                                    <option value="mercedes">Life Insurance</option>
                                                 </select>
                                             </label>
                                         </td>
                                         <td>
                                             <label for="zipCode">
-                                                <input type="text" name="zipCode" placeholder="Enter Zip Code">
+                                                <input type="text" name="zipCode" value="ZIP Code">
                                             </label>
                                         </td>
                                         <td>
-                                            <label for="submit">
-                                                <button type="submit" name="submit" value="Get a quote">
-                                                    <a id="form-submit" href="#">Get Quotes</a>
-                                                </button>
+                                            <label for="quotes">
+                                                <input type="submit" name="quotes" value="Get a quote">
                                             </label>
                                         </td>
                                     </tr>

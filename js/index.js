@@ -32,7 +32,6 @@ function navbar_template(nav) {
 		<label for="toggle" class="burger"></label>
 		<input type="checkbox" name="toggle" id="toggle" class="toggle">
 	
-
 		<ul class="menu">
 			<li><a href=" ${nav.url1} "> ${nav.txt1} </a></li>
             <li><a href=" ${nav.url2} "> ${nav.txt2} </a></li>
