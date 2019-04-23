@@ -50,6 +50,9 @@
 @import url("stylesheet.css");
 
 /* loads core */
+@import url("ui-3-min-v1.0.css");
+
+/* loads core */
 @import url("ui-3-core-v1.0.css");
 
 
