@@ -1,176 +1,9 @@
-.header-title {
-    --insert-align-items: start !important;
-}
-
-
-.header-title p:nth-child(1) {
-    font-size: 3em;
-    letter-spacing: 0em;
-    color: var(--secondary);
-}
-
-.header-title p:nth-child(2) {
-    font-family: 'PT Sans Caption', sans-serif;
-    font-size: 7em;
-    letter-spacing: 2px;
-    color: var(--secondary);
-}
-
-
-.webfont-huge {
-    font-size: 8em;
-    text-shadow: 1px 1px #000 !important;
-    color: var(--secondary) !important;
-    font-size: 10em !important;
-}
-
-
-
-.icon-stars {
-    width: 100px;
-    align-items: flex-start !important;
-}
-
-.icon-stars i {
-    text-shadow: 1px 1px #000 !important;
-    color: orange !important;
-}
-
-
-
-[class*="proBox1"] {
-
-
-    --insert-max-height: 450px !important;
-    --insert-padding: 32px;
-    --insert-border-radius: 2px;
-    --insert-box-shadow: var(--shadow);
-    --h3-color: var(--primary);
-    --h3-font-size: 1.4em;
-    --h3-font-weight: 600;
-    --h3-text-align: center;
-    --p-color: var(--black);
-    --p-font-size: 1.2em;
-    --fa-color: var(--tertiary);
-    --fa-font-size: 3.6rem;
-    --fa-text-align: center;
-    --fa-text-shadow: 1px 1px #000 !important;
-}
-
-.proBox1>* {
-    margin: 16px 0 !important;
-}
-
-
-.listBox {
-    --h3-color: var(--primary);
-    --h3-font-size: 1.4em;
-    --h3-font-weight: 600;
-    --h3-text-align: left;
-    --p-color: var(--black);
-    --p-font-size: 1.2em;
-}
-
-.listBox li {
-    margin: 32px 0;
-}
-
-[class*="deep-img"].homeId1 {
-    background-image: var(--bg-img-2) !important;
-}
-
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-
-
-input[type=text] {
-    padding: 16px 32px;
-    border: 2px solid #ccc;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-input[type=text]:focus {
-    border-color: #333;
-}
-
-
-
-select {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -webkit-padding-end: 20px;
-    -moz-padding-end: 20px;
-    -webkit-padding-start: 2px;
-    -moz-padding-start: 2px;
-    background-position: center right;
-    background-repeat: no-repeat;
-    border: 1px solid #AAA;
-    border-radius: 2px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    color: #555;
-    font-size: inherit;
-    margin: 0;
-    overflow: hidden;
-    padding: 16px 32px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-
-
-.header-title .button {
-    /* color:#fff !important; */
-}
-
-
-.deep-img-id1 {
-    background-image: url('https://i0.wp.com/www.businesspost.ng/wp-content/uploads/2017/04/Medical-Services-300x200.jpg?resize=300%2C200');
-}
-
-hr {
-    background: var(--border);
-    height: 0.5px;
-    margin: auto;
-    max-width: var(--page-max-width);
-}
-
-
-
-
-
-[class*="module"].headlines {
---h2-font-size:4em !important;
---h3-font-size2:2em !important;
---insert-padding:64px !important;
-}
-
-
-.foot-menu a{
-color:var(--primary);
-margin: 4px 2px;
-}
-
-
-
-
-
-
-
 .navbar-empty {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: var(--page-max-width);
     margin: auto;
-
 }
 
 .navbar-empty i {
@@ -178,17 +11,21 @@ margin: 4px 2px;
     color: var(--primary);
     font-size: 5em;
 }
-
 .navbar-empty h3 {
     margin: 0px;
     color: var(--primary);
     font-size: 2em;
 }
 
+[class*="module"].headlines {
+    --h2-font-size: 4em !important;
+    --h3-font-size2: 2em !important;
+    --insert-padding: 64px !important;
+}
+
 [class*="module"].box-quotes {
     background: #fff;
     box-shadow: var(--shadow);
-
     --insert-padding: 64px 32px;
     --insert-display: flex;
     --insert-justify-content: center;
@@ -200,7 +37,15 @@ margin: 4px 2px;
     --fa-color: var(--primary);
 }
 
+a.quotes-page  {
+    color: blue !important;
+}
 
-.quotes-page a {
-    color:blue;
+.icon-bottom i {
+    font-size: 5em;
+}
+
+.foot-menu a {
+    color: var(--primary) !important;
+    margin: 4px 2px;
 }
