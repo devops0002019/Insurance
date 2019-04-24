@@ -23,7 +23,7 @@
 @import url('_header.css');
 
 /*Loads Navbar.css*/
-@import url('_navbar-old.css');
+@import url('_navbar.css');
 
 /*Loads _inventory.css*/
 @import url('_inventory.css');
@@ -49,8 +49,9 @@
 /* loads stylesheet */
 @import url("stylesheet.css");
 
+
 /* loads core */
-@import url("ui-3-min-v1.0.css");
+/*@import url("ui-3-min-v1.0.css");*/
 
 /* loads core */
 @import url("ui-3-core-v1.0.css");

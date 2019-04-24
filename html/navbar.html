@@ -6,120 +6,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Footer Component </title>
 	<link href="/src/css/index.css" rel="stylesheet" type="text/css" media="screen">
-	<style type="text/css">
-	
-	
-		
-		.navicon {
-			height: 100%;
-			position: absolute;
-		}
-.nav {
-	position: relative;
-    border-bottom: 1px solid #EAEAEB;
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-}
-.menu {
-    margin: 0 30px 0 0;
-}
-.menu a {
-    clear: right;
-    text-decoration: none;
-    color: gray;
-    margin: 0 10px;
-    line-height: 70px;
-}
-
-span {
-    color: #54D17A;
-}
-
-label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-#toggle {
-    display: none;
-}
-
-
-@media only screen and (max-width: 500px) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-    .menu a {
-        display: block;
-        border-bottom: 1px solid #EAEAEB;
-        margin: 0;
-     
-    }
-    #toggle:checked + .menu {
-        display: block;
-    }
-    
-    
-}
-		
-		
-		
-		
-		#navbar {
-			display: flex;
-			justify-content: space-between;
-			border:1px solid red;
-		}
-		
-		.brand {
-			border:1px solid blue;
-		}
-			.brand h1 {
-				margin:0;
-			}
-		
-		
-		
-		.menu {
-			border:1px solid orange;
-		}
-
-	
-	</style>
 </head>
 
 <body>
 
-	<nav class="nav">
-       
-   
-       	<label class="navicon" for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        
-      
-  <figure>
-  	 <h1>Brand</h1>
-  </figure>
-       
+	<nav id="navbar">
 
-        <div class="menu">
-            <a href="#">Business</a>
-            <a href="#">Services</a>
-            <a href="#">Learn More</a>
-            <a href="#"><span>Free Trial</span></a>
-        </div>
-        
-    </nav>
+		<div class="nav">
+
+			<figure class="brand">
+				<a href="#">Brand</a>
+			</figure>
+
+
+			<div id="menu">
+
+				<label for="toggle" class="toggles">
+					<i class="fas fa-bars"></i>
+				</label>
+				<input id="toggle" type="checkbox" />
+
+				<ul class="menu-list">
+					<li><a href="">item 1</a></li>
+					<li><a href="">item 2</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+
 
 
 </body>
