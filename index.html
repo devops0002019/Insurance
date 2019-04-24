@@ -11,231 +11,157 @@
     <title>Home</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="css/ui-3-min-v1.0.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="css/ui-3-core-v1.0.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- <link href="css/ui-3-min-v1.0.css" rel="stylesheet" type="text/css" media="screen"> -->
+    <!-- <link href="css/ui-3-core-v1.0.css" rel="stylesheet" type="text/css" media="screen"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="stylesheet.css">
 
-<style>
-.header-title .button{
-    color:#fff !important;
-}
+    <style>
+    .navbar-empty {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: var(--page-max-width);
+        margin: auto;
 
+    }
+    .navbar-empty i {
+        margin: 8px;
+        color:var(--primary);
+        font-size:5em;
+    }
+    .navbar-empty h3 {
+        margin: 0px;
+        color:var(--primary);
+        font-size:2em;
+    }
 
-.deep-img-id1 {
-background-image: url('https://i0.wp.com/www.businesspost.ng/wp-content/uploads/2017/04/Medical-Services-300x200.jpg?resize=300%2C200');
-}
-
-hr {
-    background: var(--border);
-    height: 0.5px;
-    margin: auto;
-    max-width: var(--page-max-width);
-}
-
-</style>
+    </style>
 
 </head>
-
 
 <body>
 
 
-    <nav id="navbar"></nav>
+
+    <!-- <nav id="navbar"></nav> -->
 
     <main id="page">
 
-        <section class="section padd-0 deep-aquamarine">
 
-            <div class="grid set-cols-2 set-sizes-1m-1s">
+        <div class="navbar-empty">
+            <i class="fas fa-brain"></i>
+            <h3>(555)555-5555</h3>
+        </div>
 
+        <section class="section deep-tertiary">
 
-                <div class="column">
+            <div class="grid">
 
-                    <div class="module header-title">
-
-                        <p>Insurance that's actually easy?</p>
-                        <p>YES, PLEASE</p>
-
-                        <form class="ui3-options" action="">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <label for="options">
-                                                <select name="options" onchange="document.getElementById('form-submit').href = this.value;">
-                                                    <option value="">Select</option>
-                                                    <option value="index.html">Health</option>
-                                                    <option value="life.html">Life</option>
-                                                    <option value="car.html">Car</option>
-                                                </select>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label for="zipCode">
-                                                <input type="text" name="zipCode" placeholder="Enter Zip Code">
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label for="form-submit">
-                                                <a  class="button" id="form-submit" href="#">Get Quotes</a>
-                                            </label>
-
-                                            <!-- <label for="submit">
-                                                    <button type="submit" name="submit" value="Get a quote">
-                                                        <a id="form-submit" href="#">Get Quotes</a>
-                                                    </button>
-                                                </label> -->
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </form>
-
-                        <br>
-                        <q> <i>Hey, get a quote. It's easy</i> </q>
-                        <p>- A quote from Jhonny Doe</p>
+                <div class="column fullrow">
+                    <div class="module headlines">
+                        <h2>Protect What Matters Most</h2>
+                        <h3>What are you looking to protect?</h3>
                     </div>
                 </div>
 
                 <div class="column">
-                    <img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/05/31183650/Lawyer-PNG-Cartoon.png" alt="">
+                    <a href="/" class="button">Get Quote</a>
                 </div>
 
+                <div class="column">
+                    <h2>Primary Health Plans Provided</h2>
+                    <div>
+                        <h3>Short Term Health Insurance</h3>
+                        <p>Short Term Health Insurance (STM) was introduced to the market for people who needed help
+                            covering gaps in coverage and it is not an "Obamacare" plan under the Affordable Care Act.
+                            The plans offer a range of deductibles, co-pay, and max out of pocket options to create more
+                            comprehensive or more affordable options for the insured. The duration of a STM plan is
+                            determined by the carrier and the state laws, ranging from 3 months to 12. Everyone is not
+                            eligible for STM plans, some coverages & health benefits are not covered by them, and you
+                            can be denied coverage for pre-existing conditions.</p>
+                    </div>
+
+                    <div>
+                        <h3>Indemnity Insurance</h3>
+                        <p>Some plans have names like Health Benefit Indemnity, Fixed Indemnity, and Limited Medical
+                            Indemnity. These plans have a different financial structure than traditional major medical
+                            health insurance plans and they are not major medical or Obamacare plans. Instead of co-pays
+                            and deductibles, Indemnity plans offer you "first dollar" coverage which is a cash benefit
+                            policy holders will receive if they have a doctors office or hospital visit. The coverage
+                            and benefit levels will vary for Indemnity plans and those differences will be seen in the
+                            premiums paid for the coverage. Indemnity also can include supplemental medical insurance
+                            coverage for critical illnesses or accidents, as well as non insurance supplemental health
+                            benefits such as telemedicine, insurance advocacy, and pharmacy.</p>
+                    </div>
+
+                    <div>
+                        <h3>Supplemental Health Products</h3>
+                        <p>Many Short Term and Indemnity plans will also be sold with supplemental health products, some
+                            of these are insurance products and some are not. Most commonly these are dental, vision,
+                            critical illness, emergency medical, and accidental death & dismemberment (AD&D) insurance
+                            plans. They can also be products like telemedicine for 24/7 access to medical providers,
+                            insurance advocacy services to help you take advantage of your plans, pharmacy benefits for
+                            discounted prescriptions, and other group association discounts.</p>
+                    </div>
+
+                    <div>
+                        <h3>Other Insurance Options</h3>
+                        <p>HealthInsurance.net also works with a network of insurance providers and insurance marketing
+                            companies to help consumers find affordable options.</p>
+                        <p>This site does not provide Affordable Care Act (ACA) Plans. Visit healthcare.gov for ACA
+                            plans. Short Term Health Insurance and Health Benefit Indemnity insurance (HBI) are
+                            insurance outside of the ACA. Short Term Health Insurance and HBI do not cover pre-existing
+                            conditions and do not include all ten of the minimum essential benefits of the ACA. You may
+                            be subject to the ACA Uninsured Tax (eliminated by the Congressional Tax Reform Act starting
+                            in 2019).</p>
+                    </div>
+                </div>
 
             </div>
         </section>
-
-
 
         <section class="section">
 
             <div class="grid">
 
                 <div class="column">
-
-                    <h2> Easy home and car insurance quotes </h2>
-                    <q> Great quotes, fast and simple, made shopping for insurance easy. </q>
-                    <p>- Julian M.</p>
-
-                    <div class="flex icon-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <hr>
-
-        <section class="section">
-
-            <div class="grid set-cols-2">
-
-                <div class="column">
-                    <i class="fas fa-tachometer-alt webfont-huge"></i>
+                    <img src="/img/bbb.png" alt="">
                 </div>
 
                 <div class="column">
-                    <h2>Safe drivers save big with DriveSense®</h2>
-
-                    <p>Customers who enroll could save $100*. But even if you're not a customer, DriveSense is free for
-                        anyone to use! Keep an eye on your driving habits with weekly recaps and trip tips.</p>
-                    <a class="link" href="#">Take it for a spin.</a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="section">
-
-            <div class="grid set-cols-3 set-gap-32">
-
-                <div class="column fullrow">
-                    <h2>Safe drivers save big with DriveSense®</h2>
-                    <p>Customers who enroll could save $100*. But even if you're not a customer, DriveSense is free for
-                        anyone to use! Keep an eye on your driving habits with weekly recaps and trip tips.</p>
-                </div>
-
-                <div class="column proBox1">
-                    <i class="fas fa-star"></i>
-                    <h3>Find the right amount of car insurance.</h3>
-                    <p>Use our online Coverage Counselor® tool. It can help you find car insurance that's right for you.
-                    </p>
-                    <a class="link" href="#">Take it for a spin.</a>
-                </div>
-
-                <div class="column proBox1">
-                    <i class="fas fa-star"></i>
-                    <h3>Compare car insurance quotes.</h3>
-                    <p>Comparing quotes online means saving money. Do all the comparing you need in minutes.</p>
-                    <a class="link" href="#">Dare to compare.</a>
-                </div>
-
-                <div class="column proBox1">
-                    <i class="fas fa-star"></i>
-                    <h3>Find the right amount of homeowners insurance.</h3>
-                    <p>Try our Home Insurance Calculator. It helps you figure out how much homeowners insurance is right
-                        for you.</p>
-                    <a class="link" href="#">Calculate your coverage.</a>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <hr>
-
-        <section class="section">
-
-            <div class="grid set-cols-2  set-gap-64 set-sizes-1s-1l">
-
-                <div class="column fullrow">
-                    <h2>Safe drivers save big with DriveSense®</h2>
-                    <p>Customers who enroll could save $100*. But even if you're not a customer, DriveSense is free for
-                        anyone to use! Keep an eye on your driving habits with weekly recaps and trip tips.</p>
-                </div>
-
-                <div class="column deep-img-id1"> </div>
-
-                <div class="column listBox">
-                    <ul>
-                        <li>
-                            <h3>Log into your policy</h3>
-                            <p>Go paperless. Update your info. Make a payment. Find your ID cards and take care of biz
-                                online. Like a boss.</p>
-                        </li>
-                        <li>
-                            <h3>Get our mobile app</h3>
-                            <p>Manage your policy. File and track a claim. Do it all with a few taps on your smartphone.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>No-pain claims</h3>
-                            <p>Breaking news: 0 out of 10 people like filing a claim. That's why we make the process as
-                                quick and smooth as possible.</p>
-                        </li>
+                    <ul class="flex foot-menu">
+                        <li><a href="/"></a>Terms of Service |</li>
+                        <li><a href="">Privacy Policy |</a></li>
+                        <li><a href="">Contact Us |</a></li>
+                        <li><a href=""></a>© Copyright insurance.com 2019</li>
                     </ul>
                 </div>
 
+                <div class="column">
+                    <h2><b>Need advice? </b>Call (844) 505-4450 to speak to an Expert Agent</h2>
+                    <p>Invitations for application for insurance on healthinsurance are made through ASSURANCE IQ, INC
+                        or through its designated agent, Michael W. Rowell, only where licensed and appointed. License
+                        numbers are available upon request and are automatically provided where required by law. Michael
+                        Rowell is a licensed life insurance agent in all 50 states, including the District of Columbia,
+                        and his resident state of Washington. Michael W. Rowell’s Washington license number is 150354;
+                        in California, 0C83033; in Louisiana, 265202; in Minnesota, 20234878; in Utah, 126919; in
+                        Massachusetts, 1757436; and in Texas, 1001041. ASSURANCE IQ’s National Producer license number
+                        is 17911320 (d/b/a ASSURANCE Insurance Services).</p>
+                </div>
             </div>
-
         </section>
+
+
 
     </main>
 
     <footer id="footer"></footer>
 
-
-    <script src="js/index.js"></script>
+    <script src="app.js"></script>
 
 </body>
 

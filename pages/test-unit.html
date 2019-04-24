@@ -10,21 +10,35 @@
     <meta name="theme-color" content="#008000" />
     <title>Home</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="css/ui-3-min-v1.0.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="css/index.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- <link href="css/ui-3-min-v1.0.css" rel="stylesheet" type="text/css" media="screen"> -->
+    <!-- <link href="css/ui-3-core-v1.0.css" rel="stylesheet" type="text/css" media="screen"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+
+<style>
+
+
+</style>
+
 </head>
 
 
 <body>
 
-    <nav id="navbar"></nav>
+
+    <!-- <nav id="navbar"></nav> -->
 
     <main id="page">
 
         <section class="section padd-0 deep-aquamarine">
 
             <div class="grid set-cols-2 set-sizes-1m-1s">
+
 
                 <div class="column">
 
@@ -33,28 +47,35 @@
                         <p>Insurance that's actually easy?</p>
                         <p>YES, PLEASE</p>
 
-                        <form action="">
+                        <form class="ui3-options" action="">
                             <table>
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <label for="cars">
-                                                <select name="cars">
-                                                    <option value="volvo">Health Insurance</option>
-                                                    <option value="saab">Car Insurance</option>
-                                                    <option value="mercedes">Life Insurance</option>
+                                            <label for="options">
+                                                <select name="options" onchange="document.getElementById('form-submit').href = this.value;">
+                                                    <option value="">Select</option>
+                                                    <option value="#">Health</option>
+                                                    <option value="/life.html">Life</option>
+                                                    <option value="/car.html">Car</option>
                                                 </select>
                                             </label>
                                         </td>
                                         <td>
                                             <label for="zipCode">
-                                                <input type="text" name="zipCode" value="ZIP Code">
+                                                <input type="text" name="zipCode" placeholder="Enter Zip Code">
                                             </label>
                                         </td>
                                         <td>
-                                            <label for="quotes">
-                                                <input type="submit" name="quotes" value="Get a quote">
+                                            <label for="form-submit">
+                                                <a  class="button" id="form-submit" href="#">Get Quotes</a>
                                             </label>
+
+                                            <!-- <label for="submit">
+                                                    <button type="submit" name="submit" value="Get a quote">
+                                                        <a id="form-submit" href="#">Get Quotes</a>
+                                                    </button>
+                                                </label> -->
                                         </td>
                                     </tr>
                                 </tbody>
@@ -68,13 +89,14 @@
                 </div>
 
                 <div class="column">
-                    <img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/05/31183650/Lawyer-PNG-Cartoon.png"
-                        alt="">
+                    <img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/05/31183650/Lawyer-PNG-Cartoon.png" alt="">
                 </div>
 
 
             </div>
         </section>
+
+
 
         <section class="section">
 
@@ -99,6 +121,8 @@
             </div>
 
         </section>
+
+        <hr>
 
         <section class="section">
 
@@ -157,6 +181,9 @@
 
         </section>
 
+
+        <hr>
+
         <section class="section">
 
             <div class="grid set-cols-2  set-gap-64 set-sizes-1s-1l">
@@ -167,7 +194,7 @@
                         anyone to use! Keep an eye on your driving habits with weekly recaps and trip tips.</p>
                 </div>
 
-                <div class="column deep-img-homeId1"> </div>
+                <div class="column deep-img-id1"> </div>
 
                 <div class="column listBox">
                     <ul>
@@ -198,7 +225,7 @@
     <footer id="footer"></footer>
 
 
-    <script src="js/index.js"></script>
+    <script src="app.js"></script>
 
 </body>
 

@@ -1,16 +1,9 @@
- 
- #page i{
-    color:var(--secondary);
- }
- 
- .header-title {
-/* --insert-background:red; */
+.header-title {
+    --insert-align-items: start !important;
+}
 
---insert-align-items: start !important;
- }
- 
- 
- .header-title p:nth-child(1) {
+
+.header-title p:nth-child(1) {
     font-size: 3em;
     letter-spacing: 0em;
     color: var(--secondary);
@@ -21,10 +14,10 @@
     font-size: 7em;
     letter-spacing: 2px;
     color: var(--secondary);
-} 
+}
 
 
- .webfont-huge {
+.webfont-huge {
     font-size: 8em;
     text-shadow: 1px 1px #000 !important;
     color: var(--secondary) !important;
@@ -33,11 +26,7 @@
 
 
 
-
-
-
-
-.icon-stars  {
+.icon-stars {
     width: 100px;
     align-items: flex-start !important;
 }
@@ -46,13 +35,6 @@
     text-shadow: 1px 1px #000 !important;
     color: orange !important;
 }
-
-h2 {
-    color: var(--secondary) !important;
-}
-
-
-
 
 
 
@@ -77,7 +59,7 @@ h2 {
 
 .proBox1>* {
     margin: 16px 0 !important;
-} 
+}
 
 
 .listBox {
@@ -144,8 +126,34 @@ select {
 
 
 
+.header-title .button {
+    /* color:#fff !important; */
+}
+
+
+.deep-img-id1 {
+    background-image: url('https://i0.wp.com/www.businesspost.ng/wp-content/uploads/2017/04/Medical-Services-300x200.jpg?resize=300%2C200');
+}
+
+hr {
+    background: var(--border);
+    height: 0.5px;
+    margin: auto;
+    max-width: var(--page-max-width);
+}
 
 
 
 
 
+[class*="module"].headlines {
+--h2-font-size:4em !important;
+--h3-font-size2:2em !important;
+--insert-padding:64px !important;
+}
+
+
+.foot-menu a{
+color:var(--primary);
+margin: 4px 2px;
+}

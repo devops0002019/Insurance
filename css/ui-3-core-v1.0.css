@@ -131,7 +131,7 @@ PAGE
 
 ------------------------------------------------------------------------*/
 #page {
-	--nav-height:78px;
+	--nav-height:0px;
 	padding: var(--nav-height)  0px;
 }
 
@@ -145,7 +145,7 @@ PAGE
 COLUMNS
 
 ------------------------------------------------------------------------*/
-[class*="column"] {
+.column{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

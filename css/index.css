@@ -2,7 +2,7 @@
 @import url("default.css");
 
 /* loads _form */
-@import url('_form.css');
+@import url('form.css');
 
 /* loads icons */
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
@@ -11,40 +11,40 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif");
 
 /*Loads Button.css*/
-@import url('_button.css');
+@import url('button.css');
 
 /*Loads Embed.css*/
-@import url('_embed.css');
+@import url('embed.css');
 
 /*Loads Footer.css*/
-@import url('_footer.css');
+@import url('footer.css');
 
 /*Loads Header.css*/
-@import url('_header.css');
+@import url('header.css');
 
 /*Loads Navbar.css*/
-@import url('_navbar.css');
+@import url('navbar.css');
 
 /*Loads _inventory.css*/
-@import url('_inventory.css');
+@import url('inventory.css');
 
 /*Loads Template Literals.css*/
-@import url('_template_literals.css');
+@import url('template_literals.css');
 
 /*Loads Library.css*/
-@import url('_library.css');
+@import url('library.css');
 
 /* loads _responsive_text */
-@import url("_responsive_text.css");
+@import url("responsive_text.css");
 
 /* loads _utilitiesore */
-@import url("_utilities.css");
+@import url("utilities.css");
 
 /* loads _grid */
-@import url("_grid.css");
+@import url("grid.css");
 
 /* loads _grid */
-@import url("_module.css");
+@import url("module.css");
 
 /* loads stylesheet */
 @import url("stylesheet.css");
