@@ -180,6 +180,7 @@ MODULE
 	--fa-padding: inherit;
 	--fa-margin: inherit;
 	--fa-order: inherit;
+	--fa-text-align: none;
 	--fa-text-shadow: none;
 	--fa-filter: none;
 	--fa-opacity: 1;
@@ -360,6 +361,7 @@ column
 	-ms-flex-order: var(--fa-order);
 	order: var(--fa-order);
 	text-shadow: var(--fa-text-shadow);
+	text-align: var(--fa-text-align);
 	-webkit-filter: var(--fa-filter);
 	filter: var(--fa-filter);
 	opacity: var(--fa-opacity);
