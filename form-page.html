@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Andrew rico">
+	<meta name="description" content="UI-3 Framework">
+	<title>Get Quote</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+		}
+
+		body {
+			height: 100vh;
+			display: flex;
+			position: relative;
+			background: rgb(87, 89, 130);
+			transition: background 0.5s ease;
+		}
+
+		.field-name,
+		.field-email,
+		.field-password,
+		.field-finish {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: white;
+			height: 50px;
+			width: 400px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-radius: 5px;
+			transition: all 0.5s ease;
+		}
+
+		.field-name i,
+		.field-email i,
+		.field-password i,
+		.field-finish i {
+			padding: 10px;
+			cursor: pointer;
+		}
+
+		.field-name input,
+		.field-email input,
+		.field-password input,
+		.field-finish input {
+			background: none;
+			border: none;
+			flex: 1;
+			height: 100%;
+			outline: none;
+		}
+
+		div.innactive {
+			opacity: 0;
+			pointer-events: none;
+			transform: translate(-50%, 50%);
+		}
+
+		div.active {
+			opacity: 1;
+			pointer-events: all;
+			transform: translate(-50%, -50%);
+		}
+
+
+		@keyframes shake {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+			50% {
+				transform: translate(-50%, -50%) rotate(10deg);
+			}
+			100% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<form>
+		<div class="field-name">
+			<i class="fas fa-user"></i>
+			<input type="text" placeholder="Username" required />
+			<i class="fas fa-arrow-down"></i>
+		</div>
+		<div class="field-email innactive">
+			<i class="fas fa-envelope"></i>
+			<input type="email" placeholder="Email" required />
+			<i class="fas fa-arrow-down"></i>
+		</div>
+		<div class="field-email innactive">
+			<i class="fas fa-key"></i>
+			<input type="password" placeholder="Password" required />
+			<i class="fas fa-arrow-down"></i>
+		</div>
+		<div class="field-finish innactive">
+			<i class="fas fa-heart"></i>
+			<p>Thank you!</p>
+			<i class="fas fa-heart"></i>
+		</div>
+	</form>
+
+
+
+
+	<script>
+		function animatedForm() {
+			const arrows = document.querySelectorAll(".fa-arrow-down");
+
+			arrows.forEach(arrow => {
+				arrow.addEventListener("click", () => {
+					const input = arrow.previousElementSibling;
+					const parent = arrow.parentElement;
+					const nextForm = parent.nextElementSibling;
+
+
+					if (input.type === "text" && validateUser(input)) {
+						nextSlide(parent, nextForm);
+					} else if (input.type === "email" && validateEmail(input)) {
+						nextSlide(parent, nextForm);
+					} else if (input.type === "password" && validateUser(input)) {
+						nextSlide(parent, nextForm);
+					} else {
+						parent.style.animation = "shake 0.5s ease";
+					}
+					parent.addEventListener("animationend", () => {
+						parent.style.animation = "";
+
+					});
+				});
+			});
+		}
+
+		function validateUser(user) {
+			if (user.value.length < 6) {
+				console.log("not enough characters");
+				error("rgb(189, 87, 87)");
+			} else {
+				error("rgb(87, 89, 130)");
+				return true;
+			}
+		}
+
+		function validateEmail(email) {
+			const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (validation.test(email.value)) {
+				error("rgb(87, 89, 130)");
+				return true;
+			} else {
+				error("rgb(189, 87, 87)");
+			}
+		}
+
+		function nextSlide(parent, nextForm) {
+			parent.classList.add('innactive');
+			parent.classList.remove('active');
+			nextForm.classList.add('active');
+		}
+
+
+		function error(color) {
+			document.body.style.background = color;
+		}
+
+		animatedForm();
+
+
+		console.log("andrew hrllo");
+	</script>
+
+
+</body>
+
+</html>

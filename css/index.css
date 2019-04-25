@@ -1,14 +1,15 @@
-/* loads default */
-@import url("default.css");
-
-/* loads _form */
-@import url('form.css');
 
 /* loads icons */
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 
 /* loads fonts */
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif");
+
+/* loads default */
+@import url("default.css");
+
+/* loads _form */
+@import url('form.css');
 
 /*Loads Button.css*/
 @import url('button.css');
@@ -45,13 +46,6 @@
 
 /* loads _grid */
 @import url("module.css");
-
-/* loads stylesheet */
-@import url("stylesheet.css");
-
-
-/* loads core */
-/*@import url("ui-3-min-v1.0.css");*/
 
 /* loads core */
 @import url("ui-3-core-v1.0.css");
