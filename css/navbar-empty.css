@@ -1,0 +1,27 @@
+[id*="navbar"] > * {
+    color:var(--navbar-text-color);
+}
+
+
+
+#navbar-empty {
+    background: var(--navbar-background);
+}
+
+#navbar-empty .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: var(--page-max-width);
+    padding:  0px 4px;
+    margin: auto;
+    background: transparent;
+}
+

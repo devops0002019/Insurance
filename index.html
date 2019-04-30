@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Andrew rico">
-    <meta name="description" content="UI-3 Framework">
+    <meta name="author" content="">
+    <meta name="description" content="">
     <meta name="theme-color" content="#008000" />
-    <title>Home</title>
+    <title>Insurance101</title>
+
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
 
 </head>
 
@@ -22,45 +25,31 @@
 
     <main id="page">
 
-        <div class="navbar-empty">
-            <i class="fas fa-brain"></i>
-            <h3>(555)555-5555</h3>
-        </div>
+        <nav id="navbar-empty"></nav>
 
-        <section class="section deep-tertiary">
+        <header class="deep-secondary">
 
-            <div class="grid">
+            <div id="header">
+                <div class="grid set-cols-1">
 
-                <div class="column fullrow">
-                    <div class="module headlines">
+                    <a href="form.html" class="column center-vertical-between header-insurance101 callaction">
+
                         <h2>Protect What Matters Most</h2>
-                        <h3>What are you looking to protect?</h3>
-                    </div>
-                </div>
 
-                <div class="column">
-                    <a class="quotes-page" href="form.html">
-                        <div class="module box-quotes">
+                        <i class="fas fa-asterisk 6em"></i>
 
-                            <div class="flip-box">
-                                <div class="flip-box-inner">
-                                    <div class="flip-box-front">
-                                        <h2>Looking For Health Insurance?</h2>
-                                    </div>
-                                    <div class="flip-box-back">
-                                        <h2>Find Quotes</h2>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                        <h4>Get a Quote</h4>
                     </a>
 
-                </div>
 
-                <div class="column">
-                    <h2>Primary Health Plans Provided</h2>
+                </div>
+            </div>
+        </header>
+
+        <section class="section deep-tertiary padd-0">
+            <div class="grid">
+
+                <div class="column insurance101">
                     <div>
                         <h3>Short Term Health Insurance</h3>
                         <p>Short Term Health Insurance (STM) was introduced to the market for people who needed help
@@ -115,20 +104,9 @@
 
             <div class="grid">
 
-                <div class="column icon-bottom">
-                    <i class="fas fa-balance-scale"></i>
-                </div>
 
-                <div class="column">
-                    <ul class="flex foot-menu">
-                        <li><a href="/"></a>Terms of Service |</li>
-                        <li><a href="">Privacy Policy |</a></li>
-                        <li><a href="">Contact Us |</a></li>
-                        <li><a href=""></a>© Copyright insurance.com 2019</li>
-                    </ul>
-                </div>
+                <div class="column center-vertical-between">
 
-                <div class="column">
                     <h2><b>Need advice? </b>Call (844) 505-4450 to speak to an Expert Agent</h2>
                     <p>Invitations for application for insurance on healthinsurance are made through ASSURANCE IQ, INC
                         or through its designated agent, Michael W. Rowell, only where licensed and appointed. License
@@ -139,10 +117,22 @@
                         Massachusetts, 1757436; and in Texas, 1001041. ASSURANCE IQ’s National Producer license number
                         is 17911320 (d/b/a ASSURANCE Insurance Services).</p>
                 </div>
+
+                <ul class="menu-list display-around">
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Services</a></li>
+                </ul>
             </div>
         </section>
 
     </main>
+
+
+    <footer id="footer"></footer>
+
+
+    <script src="app.js"></script>
 
 </body>
 

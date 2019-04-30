@@ -1,0 +1,13 @@
+:root {
+	--form-input-background: #dedede;
+}
+
+select.select {
+	padding: 0 16px;
+	background: var(--form-input-background);
+	overflow: hidden;
+	border: none;
+	border-radius: 0px !important;
+	-webkit-appearance: none;
+	appearance: none;
+}

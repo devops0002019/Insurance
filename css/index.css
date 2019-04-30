@@ -1,53 +1,48 @@
 
-/* loads icons */
-@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
-
-/* loads fonts */
-@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif");
-
 /* loads default */
 @import url("default.css");
-
-/* loads _form */
-@import url('form.css');
-
-/*Loads Button.css*/
-@import url('button.css');
-
-/*Loads Embed.css*/
-@import url('embed.css');
-
-/*Loads Footer.css*/
-@import url('footer.css');
-
-/*Loads Header.css*/
-@import url('header.css');
-
-/*Loads Navbar.css*/
-@import url('navbar.css');
-
-/*Loads _inventory.css*/
+/*Loads embed.css*/
+@import url('progressbar.css');
+/*Loads seo.css*/
+@import url('seo.css');
+/*Loads embed.css*/
+@import url('video-tag.css');
+/*Loads embed.css*/
+@import url('video-yt.css');
+/*Loads embed.css*/
+@import url('slider.css');
+/*Loads gallery.css*/
+@import url('gallery.css');
+/*Loads inventory.css*/
 @import url('inventory.css');
-
-/*Loads Template Literals.css*/
+/*Loads template_literals.css*/
 @import url('template_literals.css');
-
+/* loads form */
+@import url('form.css');
+/*Loads button.css*/
+@import url('button.css');
 /*Loads Library.css*/
-@import url('library.css');
-
-/* loads _responsive_text */
-@import url("responsive_text.css");
-
-/* loads _utilitiesore */
+@import url('components.css');
+/*Loads footer.css*/
+@import url('footer.css');
+/*Loads header.css*/
+@import url('header.css');
+/*Loads navbar.css*/
+@import url('navbar.css');
+/*Loads navbar.css*/
+@import url('navbar-empty.css');
+/*Loads menus.css*/
+@import url('menus.css');
+/* loads utilities */
 @import url("utilities.css");
-
-/* loads _grid */
-@import url("grid.css");
-
-/* loads _grid */
-@import url("module.css");
-
+/* loads column */
+@import url("column.css");
+/* loads layouts */
+@import url("layouts.css");
+/* loads responsive_text */
+@import url("responsive_text.css");
 /* loads core */
 @import url("ui-3-core-v1.0.css");
+
 
 

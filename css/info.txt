@@ -1,0 +1,49 @@
+Do you currently have Life Insurance?
+1
+2
+
+What is your gender?
+Male
+Female
+
+Have you used Tobacco Products within the last 12 months?
+1
+2
+
+Are you currently married?
+1
+2
+
+Do you have children?
+1
+2
+
+What is your date of birth?
+field date
+
+What is your height?
+Select option
+
+What is your height?
+text
+
+What is your weight?
+text
+
+Are you currently taking any prescription medications?
+1
+2
+
+What is your zip code?
+text
+
+What is your name?
+Text
+
+What is your email?
+Text
+
+Last step! Your quote is ready. Mobile or home phone number.
+Text field
+
+[Button get quotes]

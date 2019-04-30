@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home| Car Dealer</title>
+	<link href="/src/css/index.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+
+	<nav id="navbar"></nav>
+
+	<main id="page">
+
+		<section class="section">
+
+			<div class="grid set-cols-4">
+
+
+
+				<div class="column form-module">
+					<form action="">
+						<div class="preference">
+							<label for="cheese">Do you like cheese?</label>
+							<input type="checkbox" name="cheese" id="cheese">
+						</div>
+						<div class="preference">
+							<label for="peas">Do you like peas?</label>
+							<input type="checkbox" name="peas" id="peas">
+						</div>
+					</form>
+				</div>
+
+
+				<div class="column form-module">
+					<form action="">
+						<label for="ice-cream-choice">Choose a flavor:</label>
+						<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+					</form>
+				</div>
+
+
+				<div class="column form-module">
+					<form action="">
+						<fieldset>
+							<legend>Choose your favorite monster</legend>
+							<input type="radio" id="kraken" name="monster">
+							<label for="kraken">Kraken</label><br/>
+							<input type="radio" id="sasquatch" name="monster">
+							<label for="sasquatch">Sasquatch</label><br/>
+
+							<input type="radio" id="mothman" name="monster">
+							<label for="mothman">Mothman</label>
+						</fieldset>
+
+					</form>
+
+				</div>
+
+				<div class="column form-module">
+					<form action="">
+						<label for="myBrowser">Choose a browser from this list:</label>
+						<input list="browsers" id="myBrowser" name="myBrowser" />
+						<datalist id="browsers">
+						  <option value="Chrome">
+						  <option value="Firefox">
+						  <option value="Internet Explorer">
+						  <option value="Opera">
+						  <option value="Safari">
+						  <option value="Microsoft Edge">
+						</datalist>
+					</form>
+				</div>
+
+
+				<div class="column form-module">
+					<form action="">
+						<label for="story">Tell us your story:</label>
+						<textarea id="story" name="story" rows="5" cols="33">
+							It was a dark and stormy night...
+						</textarea>
+					</form>
+				</div>
+
+				<div class="column form-module">
+
+					<form action="">
+						<label for="dino-select">Choose a dinosaur:</label>
+						<select id="dino-select">
+							<optgroup label="Theropods">
+								<option>Tyrannosaurus</option>
+								<option>Velociraptor</option>
+								<option>Deinonychus</option>
+							</optgroup>
+							<optgroup label="Sauropods">
+								<option>Diplodocus</option>
+								<option>Saltasaurus</option>
+								<option>Apatosaurus</option>
+							</optgroup>
+						</select>
+					</form>
+
+				</div>
+
+				<div class="column form-module">
+					<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+						<input type="range" name="b" value="50" /> +
+						<input type="number" name="a" value="10" /> =
+						<output name="result">60</output>
+					</form>
+				</div>
+
+				<div class="column form-module">
+					<form action="">
+						<label for="fuel">Fuel level:</label>
+						<meter id="fuel" name="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100
+						</meter>
+					</form>
+				</div>
+
+				<div class="column form-module">
+					<form action="">
+						<label for="file">File progress:</label>
+						<progress id="file" max="100" value="70"> 70% </progress>
+					</form>
+				</div>
+
+				<div class="column form-module">
+					<form action="">
+						<button class="favorite styled" type="button">
+    						Add to favorites
+						</button>
+					</form>
+				</div>
+
+
+				<div class="column form-module">
+					<form action="">
+						<input type="text" name="search" placeholder="Search..">
+					</form>
+				</div>
+
+
+
+
+
+
+				<div class="column form-module fullrow">
+					<form action="">
+						<div class="container">
+							<form action="/action_page.php">
+								<div class="row">
+									<div class="col-25">
+										<label for="fname">First Name</label>
+									</div>
+									<div class="col-75">
+										<input type="text" id="fname" name="firstname" placeholder="Your name..">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-25">
+										<label for="lname">Last Name</label>
+									</div>
+									<div class="col-75">
+										<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-25">
+										<label for="country">Country</label>
+									</div>
+									<div class="col-75">
+										<select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-25">
+										<label for="subject">Subject</label>
+									</div>
+									<div class="col-75">
+										<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</form>
+				</div>
+
+
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="footer"></footer>
+
+
+	<script src="/src/js/ui-3-landing.js"></script>
+
+	<script src="/src/js/_form.js"></script>
+</body>
+
+</html>

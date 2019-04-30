@@ -1,74 +1,60 @@
-
-/*
-#footer
---------------------------------  */
-
 #footer {
-	padding: 64px 0px 0px;
-	color: #fff;
-	/* --footer-background: #151515; */
-	background: var(--secondary);
+    padding: 32px 0px;
+    color: #000;
+    background: var(--footer-background);
+
 }
 
-#footer .column {
-	--insert-justify-content: start;
-	/*			--insert-align-items: flex-end;*/
-	--insert-min-height: 200px;
-	--insert-max-width: 100px;
-	--img-max-height: 100px;
+.footer {
+    margin: auto;
+    max-width: var(--page-max-width);
+    color:var(--footer-text-color);
+    width: 100%;
 }
 
 
 #footer h5 {
-	margin: 16px 0;
+    margin: 16px 0;
+    color:var(--footer-text-color);
+    opacity: 9;
 }
 
-#footer .mission {
-	max-width: 200px;
+#footer ul.menu-list[class*="column"] {
+    --insert-padding:1028px !important;
 }
 
-.socialIcons ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-
-.socialIcons ul li {
-	margin: 0 16px;
-}
-
-.mission {
-	--insert-text-align: center;
-}
-
-.bottombar {
-	background: #000;
-	width: 100%;
-	max-width: 100%;
-}
-
-.footer-menu {
-	background: var(--footer-background);
-	width: 100%;
-	max-width: 100%;
-}
-
-.footer-menu a {
-	color: #fff;
+#footer ul.menu-list {
+    max-width: var(--page-max-width);
+    margin: 0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex;
+    width: 100%;
+    grid-column: 1 / -1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
-.footer-menu ul,
-.bottombar ul {
-	padding: 8px 0;
-	max-width: var(--page-max-width);
-	margin: auto;
-	display: -webkit-box !important;
-	display: -ms-flexbox !important;
-	display: flex !important;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+#year {
+    font-size: 16px;
+    color:var(--footer-text-color);
+}
+
+h2.copyright {
+    font-size: 16px!important;
+    color:var(--footer-text-color) !important;
+}
+
+h2.copyright:before {
+    font-size: 16px;
+    color:var(--footer-text-color) !important;
+    margin: 4px;
+    content: ' \00A9';
 }
 
 

@@ -1,0 +1,175 @@
+/*
+
+control root of main classes
+
+------------------------------------------------------------------------  */
+
+[class*="column"][class*="textBox"] {
+	--insert-display: flex;
+	--insert-justify-content: space-around;
+	--insert-align-items: center;
+	--insert-flex-direction: column;
+	--insert-min-height: 300px;
+	--insert-margin: 32px;
+	--h3-color: var(--primary);
+	--h3-text-align: center;
+	--h3-font-size: 2rem;
+	--h3-font-weight: 100;
+	--p-color: var(--black);
+	--p-font-size: 1.2rem;
+	--p-text-align: center;
+	--fa-opacity: 0.9;
+	--fa-color: var(--primary);
+	--fa-font-size: 3rem;
+	--fa-margin: 32px 0;
+}
+
+[class*="column"][class*="leadText"] {
+	--h2-color: var(--black) !important;
+	--p-color: var(--dark-text) !important;
+}
+
+[class*="column"][class*="regularText"] {
+	--h2-color: var(--black) !important;
+	--p-color: var(--black) !important;
+}
+
+
+[class*="deep-both"][class*="gym"] {
+	background-image: var(--bg-gradient-7), url(https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)!important;
+}
+
+[class*="column"].header-title {
+	--insert-margin: 220px !important;
+	--insert-background: #313131;
+	--insert-max-width: 568px!important;
+	--p-padding: 32px;
+}
+
+[class*="column"][class*="textBox"][class*="1"] {
+	--insert-align-items: start;
+	--insert-min-height: 300px;
+	--h3-color: var(--black);
+	--h3-text-align: left;
+	--h3-font-weight: 600;
+	--p-text-align: left;
+	--p-margin: 16px 0;
+	--a-color: var(--black)!important;
+	--a-box-shadow: var(--shadow);
+}
+
+[class*="column"][class*="textBox"][class*="2"] {
+	--insert-min-height: 300px;
+	--insert-padding: 32px;
+	--insert-border-radius: 2px;
+	--insert-box-shadow: var(--shadow);
+	--h3-color: var(--black);
+	--h3-font-weight: 600;
+	--p-color: var(--regular-text);
+	--fa-color: var(--gray);
+	--fa-font-size: 3.6rem;
+}
+
+[class*="column"][class*="textBox"][class*="6"] {
+	--insert-min-height: 300px;
+	--insert-height: 100%;
+	--insert-padding: 32px;
+	--insert-border-radius: 2px;
+	--insert-box-shadow: var(--shadow);
+	--h3-color: var(--white);
+	--h3-font-weight: 600;
+	--p-color: var(--white);
+	--fa-color: var(--white);
+	--fa-font-size: 3.6rem;
+}
+
+[class*="column"][class*="regularText"][class*="1"] {
+	--insert-align-items: start;
+	--insert-min-height: 370px;
+	--a-box-shadow: var(--shadow);
+}
+
+
+[class*="column"][class*="boxOverlap"][class*="1"] {
+	--insert-min-height: 300px;
+	--insert-padding: 32px;
+	--insert-border-radius: 2px;
+	--insert-background: #fff;
+	--insert-box-shadow: var(--shadow);
+	--h3-color: var(--black);
+	--h3-font-weight: 600;
+	--p-color: var(--regular-text);
+	--fa-color: var(--gray);
+	--fa-font-size: 3.6rem;
+}
+
+
+[class*="column"][class*="imgBox-overlap"] {
+/*	--img-max-height:50px;*/
+	--img-max-width:300px;
+}
+
+
+
+
+[class*="column"][class*="imgBox-small"] {
+	max-width: 100%;
+	width: 200px;
+}
+
+
+
+.boxShadow {
+	-webkit-box-shadow: 0px 0px 41px -25px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 41px -25px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 768px) {
+	[class*="boxOverlap"]:first-child {
+		z-index: 5000;
+		margin-top: -30%!important;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	[class*="boxOverlap"] {
+		position: relative;
+		z-index: 5000;
+		background: #fff;
+		margin-top: -50%!important;
+	}
+}
+
+
+.imgBox-overlap {
+	-webkit-box-shadow: 0px 0px 41px -25px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 41px -25px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 768px) {
+	.imgBox-overlap:first-child {
+		z-index: 5000;
+		margin-top: -20%!important;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.imgBox-overlap {
+		position: relative;
+		z-index: 5000;
+		background: #fff;
+		margin-top: -40%!important;
+	}
+}
+
+
+
+.geometric-figure-1 {
+	-webkit-clip-path: polygon(0 50%, 100% 23%, 100% 100%, 0 100%);
+	clip-path: polygon(0 50%, 100% 23%, 100% 100%, 0 100%);
+}
+
+.geometric-figure-2 {
+	-webkit-clip-path: polygon(69% 24%, 100% 100%, 0 100%, 0% 50%);
+	clip-path: polygon(69% 24%, 100% 100%, 0 100%, 0% 50%);
+}

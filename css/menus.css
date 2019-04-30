@@ -1,0 +1,23 @@
+
+
+
+
+
+.menu-list {
+    --menu-list-justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: var(--menu-list-justify-content);
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    max-width: var(--page-max-width);
+}
+
+
+.menu-list.display-between {
+     --menu-list-justify-content: space-between;
+}
+.menu-list.display-around {
+     --menu-list-justify-content: space-around;
+}

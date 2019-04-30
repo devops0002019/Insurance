@@ -1,0 +1,36 @@
+/*
+
+#Progress {
+	padding: 2px;
+	width: 100%;
+	max-width: 800px;
+	border-radius: 12px;
+	background-color: #ffffff;
+	
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: var(--shadow);
+	
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	#Progress {
+		width: 100%;
+	}
+}
+
+
+#progressBar {
+	border-radius: 2px;
+	margin-left: 0.4em;
+	width: 4%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+	color:#fff;
+}*/

@@ -1,0 +1,131 @@
+/*
+
+.embed {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.embed video, 
+.embed iframe {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.embed img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+.content-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.55);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+.content-overlay .overlay-content {
+    z-index: 10;
+    color: #fff;
+    font-size: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 768px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://wallpapercave.com/wp/nrzcerG.jpg');
+    background-image: linear-gradient(rgba(0, 255, 59, 0.22), rgba(70, 133, 188, 0.67)), url('https://wallpapercave.com/wp/nrzcerG.jpg');
+}
+
+@media only screen and (min-width: 1024px) {
+    .overlay-content {
+        font-size: 3rem;
+    }
+}
+
+.overlay-content  {
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 90s;
+    animation-fill-mode: forwards;
+}
+
+.overlay-content h1,
+.overlay-content p {
+    color: #fff !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .mobil-screen {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5 !important;
+        background: #000;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('/src/img/img1.jpg');
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mobil-screen {
+        display:none;
+    }
+}
+*/

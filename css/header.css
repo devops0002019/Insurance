@@ -1,0 +1,35 @@
+header {
+	background: var(--header-background)!important;
+}
+
+#header {
+	background: transparent;
+	max-width: var(--page-max-width);
+	margin: auto;
+	min-height: 400px;
+	height: 70vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+}
+
+#header p,
+#header span,
+#header a,
+#header h1,
+#header h2,
+#header h3,
+#header h4{
+	color:var(--header-text-color)!important;
+}
+
+
+
+

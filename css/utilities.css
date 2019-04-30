@@ -1,71 +1,118 @@
+/*
+full row healine
+------------------------------------------------------------------------*/
 
+.headline {
+
+margin-bottom: 2em;
+    text-align: center;
+    grid-column: 1 / -1;
+}
 
 
 
 .is-fixed {
-	background-attachment: fixed;
+    background-attachment: fixed;
 }
 
 
 
 
 
-.column-1-1 ,
 .fullrow {
-	text-align: center;
-	grid-column: 1 / -1;
+    text-align: center;
+    grid-column: 1 / -1;
 }
 
 
 
 
 .flex {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .flex-center {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 
-.ta-center {
-	text-align: center;
+.center {
+    text-align: center !important;
 }
 
 
 
 
 .font-1rem {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 .font-2rem {
-	font-size: 2rem;
+    font-size: 2rem;
 }
 
 .font-3rem {
-	font-size: 3rem;
+    font-size: 3rem;
 }
 
 .font-4rem {
-	font-size: 4rem;
+    font-size: 4rem;
 }
 
 
+[class*="1em"] {
+    --fa-font-size: 1em;
+}
+
+[class*="2em"] {
+    --fa-font-size: 2em;
+}
+
+[class*="3em"] {
+    --fa-font-size: 3em;
+}
+
+[class*="4em"] {
+    --fa-font-size: 4em;
+}
+
+[class*="5em"] {
+    --fa-font-size: 5em;
+}
+[class*="6em"] {
+    --fa-font-size: 6em;
+}
+
+[class*="7em"] {
+    --fa-font-size: 7em;
+}
+
+[class*="8em"] {
+    --fa-font-size: 8em;
+}
 
 
 
 
 .listing {
-	width: 100%;
+    width: 100%;
 }
+
+
+
+.text-white {
+    color:#fff !important;
+}
+
+
+

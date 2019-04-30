@@ -1,0 +1,474 @@
+/*
+
+column
+
+------------------------------------------------------------------------*/
+[class*="column"] {
+    color: var(--insert-color);
+    background: var(--insert-background) ;
+    border: var(--insert-border);
+    border-radius: var(--insert-border-radius);
+    display: var(--insert-display);
+    -webkit-box-pack: var(--insert-justify-content);
+    -ms-flex-pack: var(--insert-justify-content);
+    justify-content: var(--insert-justify-content);
+    -webkit-box-align: var(--insert-align-items);
+    -ms-flex-align: var(--insert-align-items);
+    align-items: var(--insert-align-items);
+    -ms-flex-item-align: var(--insert-align-self);
+    align-self: var(--insert-align-self);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: var(--insert-flex-direction);
+    flex-direction: var(--insert-flex-direction);
+    padding: var(--insert-padding);
+    margin: var(--insert-margin);
+    line-height: var(--insert-line-height);
+    width: var(--insert-width);
+    min-width: var(--insert-min-width);
+    max-width: var(--insert-max-width);
+    height: var(--insert-height);
+    min-height: var(--insert-min-height);
+    max-height: var(--insert-max-height);
+    font-family: var(--insert-font-family);
+    font-size: var(--insert-font-size);
+    font-weight: var(--insert-font-weight);
+    text-align: var(--insert-text-align);
+    text-transform: var(--insert-text-transform);
+    text-shadow: var(--insert-text-shadow);
+    letter-spacing: var(--insert-letter-spacing);
+    -webkit-box-shadow: var(--insert-box-shadow);
+    box-shadow: var(--insert-box-shadow);
+
+    --insert-color: inherit;
+    --insert-background: inherit;
+    --insert-border: inherit;
+    --insert-border-radius: inherit;
+
+    --insert-display: flex;
+    --insert-justify-content:center;
+    --insert-align-items: center;
+    --insert-flex-direction: column;
+
+    --insert-padding: inherit;
+    --insert-margin: auto;
+    --insert-line-height: inherit;
+    --insert-width: inherit;
+    --insert-max-width: 100%;
+    --insert-min-width: inherit;
+    --insert-height: auto;
+    --insert-min-height: 25vh;
+    --insert-max-height: inherit;
+    --insert-box-shadow: inherit;
+
+    --insert-font-family: inherit;
+    --insert-font-weight: inherit;
+    --insert-text-align: inherit;
+    --insert-text-transform: inherit;
+    --insert-letter-spacing: inherit;
+
+    --h1-color: inherit;
+    --h1-padding: inherit;
+    --h2-margin: 0px 0px 64px;
+    --h1-line-height: 1.4;
+    --h1-font-family: inherit;
+    --h1-font-weight: 600;
+    --h1-text-align: inherit;
+    --h1-text-transform: inherit;
+    --h1-text-shadow: inherit;
+    --h1-letter-spacing: inherit;
+
+    --h2-color: inherit;
+    --h2-padding: inherit;
+    --h2-margin: 0px 0px 8px;
+    --h2-line-height: 1.4;
+    --h2-font-family: inherit;
+    --h2-font-weight: 400;
+    --h2-text-align: inherit;
+    --h2-text-transform: inherit;
+    --h2-text-shadow: inherit;
+    --h2-letter-spacing: inherit;
+
+    --h3-color: inherit;
+    --h3-padding: inherit;
+    --h3-margin: inherit;
+    --h3-line-height: 1.3;
+    --h3-font-family: inherit;
+    --h3-font-weight: inherit;
+    --h3-text-align: inherit;
+    --h3-text-transform: inherit;
+    --h3-text-shadow: inherit;
+    --h3-letter-spacing: inherit;
+
+    --h4-display: block;
+    --h4-color: inherit;
+    --h4-padding: inherit;
+    --h4-margin: inherit;
+    --h4-line-height: 1.6;
+    --h4-font-family: inherit;
+    --h4-font-weight: 400;
+    --h4-text-align: inherit;
+    --h4-text-transform: inherit;
+    --h4-text-shadow: inherit;
+    --h4-letter-spacing: inherit;
+
+    --h5-color: inherit;
+    --h5-padding: inherit;
+    --h5-margin: inherit;
+    --h5-line-height: 1.6;
+    --h5-font-family: inherit;
+    --h5-font-weight: 100;
+    --h5-text-align: inherit;
+    --h5-text-transform: inherit;
+    --h5-text-shadow: inherit;
+    --h5-letter-spacing: inherit;
+
+    --h6-color: inherit;
+    --h6-padding: inherit;
+    --h6-margin: inherit;
+    --h6-line-height: 1.6;
+    --h6-font-family: inherit;
+    --h6-font-weight: 800;
+    --h6-text-align: inherit;
+    --h6-text-transform: inherit;
+    --h6-text-shadow: inherit;
+    --h6-letter-spacing: inherit;
+
+    --p-color: inherit;
+    --p-background: inherit;
+    --p-border: inherit;
+    --p-border-radius: inherit;
+    --p-width: inherit;
+    --p-padding: inherit;
+    --p-margin: inherit;
+    --p-line-height: 1.6;
+    --p-font-family: inherit;
+    --p-font-weight: 300;
+    --p-text-align: inherit;
+    --p-text-transform: inherit;
+    --p-text-shadow: inherit;
+    --p-letter-spacing: inherit;
+
+    --span-color: inherit;
+    --span-font-weight: inherit;
+    --span-text-transform: inherit;
+    --span-text-shadow: inherit;
+
+    --img-object-fit: cover;
+    --img-height: auto;
+    --img-width: 100%;
+    --img-max-width: 100%;
+    --img-padding: 0px;
+    --img-margin: 0px;
+    --img-border: none;
+    --img-border-radius: 0px;
+    --img-box-shadow: none;
+
+    --fa-color: var(--primary);
+    --fa-background: inherit;
+    --fa-border: inherit;
+    --fa-border-radius: inherit;
+    --fa-font-size: 1em;
+    --fa-width: 100%;
+    --fa-padding: inherit;
+    --fa-margin: inherit;
+    --fa-order: inherit;
+    --fa-text-align: none;
+    --fa-text-shadow: none;
+    --fa-filter: none;
+    --fa-opacity: 1;
+    --fa-box-shadow: inherit;
+    --fa-text-shadow: inherit;
+
+    --a-margin: inherit;
+    --a-line-height: 1;
+    --a-color: inherit;
+    --a-box-shadow: inherit;
+
+    --list-content: ' \2714';
+    --list-color: var(--white);
+}
+
+@media all and (min-width: 768px) {
+    [class*="column"] {
+        --insert-max-width: 100%;
+
+    }
+}
+
+
+
+/*
+
+column
+
+------------------------------------------------------------------------  */
+[class*="column"] h1 {
+    color: var(--h1-color);
+    background: var(--h1-background);
+    border: var(--h1-border);
+    padding: var(--h1-padding);
+    margin: var(--h1-margin);
+    line-height: var(--h1-line-height);
+    font-family: var(--h1-font-family);
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+    text-align: var(--h1-text-align);
+    text-transform: var(--h1-text-transform);
+    text-shadow: var(--h1-text-shadow);
+    letter-spacing: var(--h1-letter-spacing);
+}
+
+[class*="column"] h2 {
+    color: var(--h2-color);
+    background: var(--h2-background);
+    border: var(--h2-border);
+    padding: var(--h2-padding);
+    margin: var(--h2-margin);
+    line-height: var(--h2-line-height);
+    font-family: var(--h2-font-family);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    text-align: var(--h2-text-align);
+    text-transform: var(--h2-text-transform);
+    text-shadow: var(--h2-text-shadow);
+    letter-spacing: var(--h2-letter-spacing);
+}
+
+[class*="column"] h3 {
+    color: var(--h3-color);
+    background: var(--h3-background);
+    border: var(--h3-border);
+    padding: var(--h3-padding);
+    margin: var(--h3-margin);
+    line-height: var(--h3-line-height);
+    font-family: var(--h3-font-family);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    text-align: var(--h3-text-align);
+    text-transform: var(--h3-text-transform);
+    text-shadow: var(--h3-text-shadow);
+    letter-spacing: var(--h3-letter-spacing);
+}
+
+[class*="column"] h4 {
+    display: var(--h4-display);
+    color: var(--h4-color);
+    background: var(--h4-background);
+    border: var(--h4-border);
+    padding: var(--h4-padding);
+    margin: var(--h4-margin);
+    line-height: var(--h4-line-height);
+    font-family: var(--h4-font-family);
+    font-size: var(--h4-font-size);
+    font-weight: var(--h4-font-weight);
+    text-align: var(--h4-text-align);
+    text-transform: var(--h4-text-transform);
+    text-shadow: var(--h4-text-shadow);
+    letter-spacing: var(--h4-letter-spacing);
+}
+
+[class*="column"] h5 {
+    color: var(--h5-color);
+    background: var(--h5-background);
+    border: var(--h5-border);
+    padding: var(--h5-padding);
+    margin: var(--h5-margin);
+    line-height: var(--h5-line-height);
+    font-family: var(--h5-font-family);
+    font-size: var(--h5-font-size);
+    font-weight: var(--h5-font-weight);
+    text-align: var(--h5-text-align);
+    text-transform: var(--h5-text-transform);
+    text-shadow: var(--h5-text-shadow);
+    letter-spacing: var(--h5-letter-spacing);
+}
+
+[class*="column"] h6 {
+    color: var(--h6-color);
+    background: var(--h6-background);
+    border: var(--h6-border);
+    padding: var(--h6-padding);
+    margin: var(--h6-margin);
+    line-height: var(--h6-line-height);
+    font-family: var(--h6-font-family);
+    font-size: var(--h6-font-size);
+    font-weight: var(--h6-font-weight);
+    text-align: var(--h6-text-align);
+    text-transform: var(--h6-text-transform);
+    text-shadow: var(--h6-text-shadow);
+    letter-spacing: var(--h6-letter-spacing);
+}
+
+[class*="column"] p {
+    color: var(--p-color);
+    background: var(--p-background);
+    border: var(--p-border);
+    border-radius: var(--p-border-radius);
+    padding: var(--p-padding);
+    margin: var(--p-margin);
+    width: var(--p-width);
+    line-height: var(--p-line-height);
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    text-align: var(--p-text-align);
+    text-transform: var(--p-text-transform);
+    text-shadow: var(--p-text-shadow);
+    letter-spacing: var(--p-letter-spacing);
+}
+
+[class*="column"] span {
+    color: var(--span-color);
+    font-size: var(--span-font-size);
+    font-weight: var(--span-font-weight);
+    text-transform: var(--span-text-transform);
+    text-shadow: var(--span-text-shadow);
+}
+
+[class*="column"] img {
+    -o-object-fit: var(--img-object-fit);
+    object-fit: var(--img-object-fit);
+    height: var(--img-height);
+    width: var(--img-width);
+    max-width: var(--img-max-width);
+    padding: var(--img-padding);
+    margin: var(--img-margin);
+    -webkit-box-shadow: var(--img-box-shadow);
+    box-shadow: var(--img-box-shadow);
+    border: var(--img-border);
+    border-radius: var(--img-border-radius);
+
+}
+
+[class*="column"] i.fa,
+[class*="column"] i.fas,
+[class*="column"] i.fab {
+    color: var(--fa-color);
+    border: var(--fa-border);
+    border-radius: var(--fa-border-radius);
+    background: var(--fa-background);
+    width: var(--fa-width);
+    padding: var(--fa-padding);
+    margin: var(--fa-margin);
+    font-size: var(--fa-font-size);
+    -webkit-box-ordinal-group: var(--fa-order);
+    -ms-flex-order: var(--fa-order);
+    order: var(--fa-order);
+    text-shadow: var(--fa-text-shadow);
+    text-align: var(--fa-text-align);
+    -webkit-filter: var(--fa-filter);
+    filter: var(--fa-filter);
+    opacity: var(--fa-opacity);
+    -webkit-box-shadow: var(--fa-box-shadow);
+    box-shadow: var(--fa-box-shadow);
+}
+
+[class*="column"] a {
+    color: var(--a-color);
+    margin: var(--a-margin);
+    line-height: var(--a-line-height);
+    -webkit-box-shadow: var(--a-box-shadow);
+    box-shadow: var(--a-box-shadow);
+}
+
+[class*="column"] ul.list-format,
+[class*="column"] ul.list-format li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+[class*="column"] ul[class*="list-format"] li > *:before {
+    content: var(--list-content);
+    font-size: var(--list-font-size);
+    color: var(--list-color);
+    margin: 0px 6px 0px;
+}
+
+
+
+
+/*
+
+column Helpers
+
+------------------------------------------------------------------------  */
+
+
+[class*="column"].layout-start {
+    border: 2px solid red;
+    --insert-align-items: start;
+}
+
+
+[class*="column"][class*="center-items"] {
+    --insert-display: flex;
+    --insert-justify-content: center;
+    --insert-align-items: center;
+    --insert-flex-direction: column;
+    --insert-text-align: center;
+}
+
+.start-vertical-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.center-vertical-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+/*    min-height: 200px;*/
+/*    height: 30vh;*/
+    text-align: center;
+}
+
+
+
+.max-vertical-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+[class*="column"] > * {
+    margin: 0.5em 0px !important;
+}
