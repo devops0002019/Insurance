@@ -25,16 +25,37 @@
 
 
     <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+
+
+        <h3 id="status"><span class="percentage">1% </span>Completed</h3>
+        <progress id="progressBar" value="0" max="100"></progress>
+
+
         <p>
             <label>Email: <input type="text" name="thename" /></label>
         </p>
         <p>
             <label>Message: <textarea name="themessage"></textarea></label>
         </p>
+
+
+        <p>
+            <label> Choose 1:<input type="radio" name="radio is one" required></label>
+            <label> Choose 2:<input type="radio" name="radio is two" required></label>
+            <label> Choose 3:<input type="radio" name="radio is three" required></label>
+        </p>
+
+
+
         <div data-netlify-recaptcha="true"></div>
+
         <p>
             <button type="submit">Send</button>
         </p>
+
+
+
+
     </form>
 
 

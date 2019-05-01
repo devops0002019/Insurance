@@ -48,7 +48,6 @@ function validateCoverage(coverage) {
 
     var converage = document.getElementsByName('coverage');
 
-
     if (!(converage[0].checked || converage[1].checked)) {
         error("rgb(101, 109, 255)");
         progress.value = 25;
@@ -81,7 +80,9 @@ function validateUser(user) {
 }
 
 function validateEmail(email) {
+
     const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (validation.test(email.value)) {
         error("rgb(101, 109, 255)");
         progress.value = 75;
