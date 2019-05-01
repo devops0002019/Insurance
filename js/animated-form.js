@@ -44,12 +44,21 @@ function animatedForm() {
 
 
 
+var progress = document.getElementById('progressBar');
+var statusProgress = document.getElementById('status');
+
+
+
+
 function validateCoverage(coverage) {
 
     var gen = document.getElementsByName('coverage');
 
+
     if (!(gen[0].checked || gen[1].checked)) {
         error("rgb(101, 109, 255)");
+        progress.value = 25;
+        statusProgress.innerHTML = `<span class="percentage">25% </span>Completed`;
         return true;
     } else {
         error("rgb(189, 87, 87)");
@@ -60,12 +69,15 @@ function validateCoverage(coverage) {
 
 
 function validateUser(user) {
+
     if (user.value.length < 6) {
         console.log("not enough characters");
         error("rgb(189, 87, 87)");
         return false;
     } else {
         error("rgb(101, 109, 255)");
+        progress.value = 50;
+        statusProgress.innerHTML = `<span class="percentage">50% </span>Completed`;
         return true;
     }
 }
@@ -74,6 +86,8 @@ function validateEmail(email) {
     const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (validation.test(email.value)) {
         error("rgb(101, 109, 255)");
+        progress.value = 75;
+        statusProgress.innerHTML = `<span class="percentage">75% </span>Completed`;
         return true;
     } else {
         error("rgb(189, 87, 87)");
@@ -90,6 +104,8 @@ function validateGender(gender) {
 
     if (!(gen[0].checked || gen[1].checked)) {
         error("rgb(101, 109, 255)");
+        progress.value = 100;
+        statusProgress.innerHTML = `<span class="percentage">100% </span>Completed`;
         return true;
     } else {
         error("rgb(189, 87, 87)");
@@ -185,8 +201,5 @@ console.log(" hello andrew ");
 
 
 
-                //            } else if (location.className === location.value && validateGender(location)) {
-                //                nextSlide(parent, nextForm);
-
-
-
+//            } else if (location.className === location.value && validateGender(location)) {
+//                nextSlide(parent, nextForm);

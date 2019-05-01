@@ -15,43 +15,118 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/src/css/index.css">
 
     <link rel="stylesheet" href="stylesheet.css">
 
 
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/hot-sneaks/jquery-ui.css" />
-    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-
-    <script>
-        $(document).ready(function($) {
-            $('#progressBar').progressbar({
-                value: 25
-            });
-
-            $('.enter-next').click(function(e) {
-                var elemDiv = $('#progressBar');
-                var status = elemDiv.progressbar("value");
-                elemDiv.progressbar("value",
-                    this.id == "minus" ? status - 25 : status + 25)
-            })
-            $('button').button();
-        });
-    </script>
-
 
     <style>
+        .center-content {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
+        #form {
+
+            position: relative;
+            height: 100%;
+            max-height: 800px;
+            width: 100%;
+            /*            border: 1px solid red;*/
+            max-width: var(--page-max-width);
+            margin: auto;
+        }
+
+
+
+        .progress {
+            z-index: 9999999;
+            max-width: 780px;
+            margin: auto;
+            min-height: 800px;
+
+        }
+
+
+        progress:after {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+        }
+
+        progress::-moz-progress-bar {
+            border-radius: 12px;
+            background: #FFF;
+            box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            progress {
+                border-radius: 12px;
+                background: #ffffff;
+                height: 10px;
+            }
+        }
+
+        progress::-webkit-progress-bar {
+            background: transparent;
+        }
+
+        progress::-webkit-progress-value {
+            border-radius: 12px;
+            background: var(--primary);
+            box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        progress::-webkit-progress-value {
+            transition: width 2s ease;
+        }
+
+
+        .percentage {
+            font-size: 2em;
+            display: block;
+            opacity: 1;
+            animation: fade 1s linear;
+        }
+
+
+        @keyframes fade {
+
+            0% {
+                opacity: 0
+            }
+
+            ,
+            50% {
+                opacity: 1
+            }
+
+            ,
+            100% {
+                opacity: 9
+            }
+        }
     </style>
 
 </head>
 
-<body id="site">
+<body id="site" class="center-content ">
 
-    <div id="progressBar"></div>
 
     <form action="thankyou.html" id="form">
+
+        <div class="progress">
+            <h3 id="status"><span class="percentage">1% </span>Completed</h3>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+
 
         <div class="field-coverage input-radio">
 
@@ -67,6 +142,7 @@
             <label for="notsure" id="plus" class="enter-next">Not sure</label>
 
         </div>
+
 
         <div class="field-username input-text innactive">
 
@@ -113,6 +189,7 @@
     </form>
 
     <script src="js/animated-form.js"></script>
+
     <script src="app.js"></script>
 
 </body>
