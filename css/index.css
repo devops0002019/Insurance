@@ -37,6 +37,9 @@
 @import url("utilities.css");
 /* loads column */
 @import url("column.css");
+/* loads animated */
+@import url("animated.css");
+
 /* loads layouts */
 @import url("layouts.css");
 /* loads responsive_text */

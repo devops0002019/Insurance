@@ -10,19 +10,23 @@ function animatedForm() {
             const nextForm = parent.nextElementSibling;
 
 
+            if (input.type === "radio" && validateCoverage(input)) {
+                nextSlide(parent, nextForm);
 
-            if (input.type === "text" && validateUser(input)) {
+
+            } else if (input.type === "text" && validateUser(input)) {
                 nextSlide(parent, nextForm);
 
             } else if (input.type === "email" && validateEmail(input)) {
                 nextSlide(parent, nextForm);
 
 
-            } else if (input.type === "radio" && validateCoverage(input)) {
+            } else if (input.type === "password" && validateUser(input)) {
                 nextSlide(parent, nextForm);
 
 
-            } else if (input.type === "radio" && validateGender(input)) {
+
+            } else if (input.type === "radio" && validateGenders(input)) {
                 nextSlide(parent, nextForm);
 
 
@@ -45,6 +49,24 @@ var statusProgress = document.getElementById('status');
 
 
 
+function validateCoverage() {
+
+    var cover = document.getElementsByName('cover')
+
+    if (!(cover[0].checked || cover[1].checked)) {
+        error("rgb(101, 109, 255)");
+        progress.value = 25;
+        statusProgress.innerHTML = `<span class="percentage">25% </span>Completed`;
+        console.log("cover is up and running");
+        return true;
+    } else {
+        error("rgb(189, 87, 87)");
+        console.log("cover is not up and running");
+        return false;
+    }
+}
+
+
 
 
 function validateUser(user) {
@@ -55,8 +77,8 @@ function validateUser(user) {
         return false;
     } else {
         error("rgb(101, 109, 255)");
-        progress.value = 25;
-        statusProgress.innerHTML = `<span class="percentage">25% </span>Completed`;
+        progress.value = 50;
+        statusProgress.innerHTML = `<span class="percentage">50% </span>Completed`;
         console.log("user is up and running");
         return true;
     }
@@ -66,8 +88,8 @@ function validateEmail(email) {
     const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (validation.test(email.value)) {
         error("rgb(101, 109, 255)");
-        progress.value = 50;
-        statusProgress.innerHTML = `<span class="percentage">50% </span>Completed`;
+        progress.value = 75;
+        statusProgress.innerHTML = `<span class="percentage">75% </span>Completed`;
         console.log("email is up and running");
         return true;
     } else {
@@ -80,31 +102,9 @@ function validateEmail(email) {
 
 
 
+function validateGender() {
 
-
-function validateCoverage(cov) {
-
-    var coverage = document.getElementsByName('coverage');
-
-    if (!(coverage[0].checked || coverage[1].checked)) {
-        error("rgb(101, 109, 255)");
-        progress.value = 75;
-        statusProgress.innerHTML = `<span class="percentage">75% </span>Completed`;
-        console.log("coverage is up and running");
-        return true;
-    } else {
-        error("rgb(189, 87, 87)");
-        console.log("coverage is not up and running");
-        return false;
-    }
-}
-
-
-
-
-function validateGender(gen) {
-
-    var gender = document.getElementsByName('gender');
+    var gender = document.getElementsByName('gender')
 
     if (!(gender[0].checked || gender[1].checked)) {
         error("rgb(101, 109, 255)");
@@ -208,4 +208,4 @@ console.log(" hello andrew ");
 
 
 //            } else if (location.className === location.value && validateGender(location)) {
-//                nextSlide(parent, nextForm);
+//                nextSlide(parent, nextForm);ss

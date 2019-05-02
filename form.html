@@ -120,7 +120,7 @@
 <body id="site" class="center-content ">
 
 
-    <form action="/thankyou.html" id="form" method="POST" data-netlify-recaptcha="true" data-netlify="true">>
+    <form action="/thankyou.html" id="form" method="POST" data-netlify-recaptcha="true" data-netlify="true">
 
         <div class="progress">
             <h3 id="status"><span class="percentage">1% </span>Completed</h3>
@@ -128,23 +128,10 @@
         </div>
 
 
-        <div class="field-coverage input-radio">
-
-            <p class="question">When would you like coverage?</p>
-
-            <input id="immediately" type="radio" value="immediately" name="coverage" required />
-            <label for="immediately" id="plus" class="enter-next">Immediately</label>
-
-            <input id="2months" type="radio" value="male" name="coverage" required />
-            <label for="2months" id="plus" class="enter-next">Within 2 months</label>
-
-            <input id="notsure" type="radio" value="female" name="coverage" required />
-            <label for="notsure" id="plus" class="enter-next">Not sure</label>
-
-        </div>
 
 
-        <div class="field-username input-text innactive">
+
+        <div class="field-username input-text">
 
             <p class="question">What is your name?</p>
 
@@ -168,15 +155,35 @@
 
         </div>
 
-        <div class="field-gender input-radio-x2 innactive">
+
+        <div class="field-coverage input-radio innactive">
+
+            <p class="question">When would you like coverage?</p>
+
+            <input id="immediately" type="radio" value="immediately" name="coverage" required />
+            <label for="immediately" id="plus" class="enter-next">Immediately</label>
+
+            <input id="2months" type="radio" value="2months" name="coverage" required />
+            <label for="2months" id="plus" class="enter-next">Within 2 months</label>
+
+            <input id="notsure" type="radio" value="notsure" name="coverage" required />
+            <label for="notsure" id="plus" class="enter-next">Not sure</label>
+
+        </div>
+
+
+
+
+
+        <div class="field-gender input-radio innactive">
 
             <p class="question">What is your Gender?</p>
 
             <input id="male" value="male" type="radio" name="gender" required />
-            <label for="male" id="plus" class="enter-next first-button">Male</label>
+            <label for="male" id="plus" class="enter-next">Male</label>
 
             <input id="female" type="radio" value="female" name="gender" required />
-            <label for="female" id="plus" class="enter-next second-button">Female</label>
+            <label for="female" id="plus" class="enter-next">Female</label>
 
         </div>
 
