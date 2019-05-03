@@ -63,9 +63,9 @@ function validateUser(user) {
         console.log("user is not up and running");
         return false;
     } else {
-        error("rgb(101, 109, 255)");
-        progress.value = 25;
-        statusProgress.innerHTML = `<span class="percentage">25% </span>Completed`;
+        error("#fff");
+        progress.value = 10;
+        statusProgress.innerHTML = `<span class="percentage">10% </span>Completed`;
         console.log("user is up and running");
         return true;
     }
@@ -79,9 +79,9 @@ function validateEmail(email) {
     var validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (validation.test(email.value)) {
-        error("rgb(101, 109, 255)");
-        progress.value = 50;
-        statusProgress.innerHTML = `<span class="percentage">50% </span>Completed`;
+        error("#fff");
+        progress.value = 20;
+        statusProgress.innerHTML = `<span class="percentage">20% </span>Completed`;
         console.log("email is up and running");
         return true;
     } else {
@@ -99,9 +99,9 @@ function validateGender(gender) {
     var gender = document.getElementsByName('gender');
 
     if (!(gender[0].checked || gender[1].checked)) {
-        error("rgb(101, 109, 255)");
-        progress.value = 100;
-        statusProgress.innerHTML = `<span class="percentage">100% </span>Completed`;
+        error("#fff");
+        progress.value = 30;
+        statusProgress.innerHTML = `<span class="percentage">30% </span>Completed`;
         console.log("gender is up and running");
         return true;
     } else {
@@ -119,9 +119,9 @@ function validateCoverage(coverage) {
     var coverage = document.getElementsByName('coverage');
 
     if (!(coverage[0].checked || coverage[1].checked)) {
-        error("rgb(101, 109, 255)");
-        progress.value = 75;
-        statusProgress.innerHTML = `<span class="percentage">75% </span>Completed`;
+        error("#fff");
+        progress.value = 40;
+        statusProgress.innerHTML = `<span class="percentage">40% </span>Completed`;
         console.log("coverage is up and running");
         return true;
     } else {
@@ -141,9 +141,9 @@ function validateIncome(income) {
     var income = document.getElementsByName('income');
 
     if (!(income[0].checked || income[1].checked)) {
-        error("rgb(101, 109, 255)");
-        progress.value = 75;
-        statusProgress.innerHTML = `<span class="percentage">75% </span>Completed`;
+        error("#fff");
+        progress.value = 50;
+        statusProgress.innerHTML = `<span class="percentage">50% </span>Completed`;
         console.log("income is up and running");
         return true;
     } else {
@@ -164,9 +164,9 @@ function validateEnrolled(enrolled) {
     var enrolled = document.getElementsByName('enrolled');
 
     if (!(enrolled[0].checked || enrolled[1].checked)) {
-        error("rgb(101, 109, 255)");
-        progress.value = 75;
-        statusProgress.innerHTML = `<span class="percentage">75% </span>Completed`;
+        error("#fff");
+        progress.value = 60;
+        statusProgress.innerHTML = `<span class="percentage">60% </span>Completed`;
         console.log("enrolled is up and running");
         return true;
     } else {
@@ -184,9 +184,9 @@ function validateBirth(date) {
     var validationBirth = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/;
 
     if (!(validationBirth.test(date.value))) {
-        error("rgb(101, 109, 255)");
-        progress.value = 100;
-        statusProgress.innerHTML = `<span class="percentage">100% </span>Completed`;
+        error("#fff");
+        progress.value = 70;
+        statusProgress.innerHTML = `<span class="percentage">70% </span>Completed`;
         console.log("birth is up and running");
         return true;
 
