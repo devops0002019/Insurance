@@ -28,15 +28,32 @@
 
 
 .progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 128px;
     position: absolute;
     top: 50%;
-    left: 35%;
-    width: 100%;
+    left:15%;
+    width: 150px;
+    height: 150px;
     margin: auto;
-    max-width: 800px;
+    padding: 100px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     /* background: rgb(255, 255, 255); */
+
+
+}
+
+
+
+#footer {
+    position: absolute;
+    bottom:-25%;
+    left:0;
+    right:0;
 
 }
 
@@ -46,7 +63,7 @@
 
 <body id="site">
 
-    <!-- <nav id="navbar-empty"></nav> -->
+    <nav id="navbar-empty"></nav>
 
     <div class="wrapper">
 
@@ -179,7 +196,7 @@
 
 
 
-    <!-- <footer id="footer"></footer> -->
+    <footer id="footer"></footer>
 
     <script src="js/animated-form.js"></script>
 

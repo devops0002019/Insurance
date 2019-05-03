@@ -1,8 +1,8 @@
 html {
-    overflow: scroll;
+    overflow-y: scroll;
     min-height: 500px;
-    height: 100vh;
-    max-height: 100vh;
+    height: 50vh;
+    /* max-height: 100vh; */
 }
 
 
@@ -10,6 +10,10 @@ html {
     background: #fafafa;
     -webkit-transition: background 0.5s ease;
     transition: background 0.5s ease;
+    /* min-height: 500px; */
+    /* height: 100vh; */
+    /* max-height: 100vh; */
+
 }
 
 
@@ -246,7 +250,6 @@ i.icon-start {
 #form {
     position: absolute;
 }
-
 
 
 progress:after {
