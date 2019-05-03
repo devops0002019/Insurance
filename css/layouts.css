@@ -2,9 +2,9 @@
 main classes
 ------------------------------------------------------------------------*/
 .page-max-width {
-	width: 100%;
-	max-width: var(--page-max-width);
-	margin: auto;
+	width: 100% !important;
+	max-width: 1024px !important;
+	margin: auto !important;
 }
 
 .section {
