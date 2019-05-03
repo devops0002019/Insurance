@@ -24,8 +24,8 @@ const navbar_data = [
 function navbar_template(navbar) {
    return `
     <ul class="menu-list">
-        <li><a href="#" class="brand"><h1>Insurance</h1></a></li>
-        <li><a href="#" class="brand"><img src="img/logo.png" alt="Logo" height="42" width="42"></a></li>
+        <li><a href="index.html" class="brand"><h1>Insurance</h1></a></li>
+        <li><a href="index.html" class="brand"><img src="img/logo.png" alt="Logo" height="42" width="42"></a></li>
     </ul>
  `;
 }
