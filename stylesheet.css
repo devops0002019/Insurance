@@ -215,7 +215,7 @@ i.icon-start {
     max-width: 1024px;
 }
 [class*="column"].insurance101>div {
-    margin: 32px 0px;
+    margin: 32px 0px !important;
 }
 
 [class*="column"].header-insurance101 {
