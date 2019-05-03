@@ -9,12 +9,16 @@ function animatedForm() {
             const parent = arrow.parentElement;
             const nextForm = parent.nextElementSibling;
 
-    
+
 
             if (input.type === "text" && validateUser(input)) {
                 nextSlide(parent, nextForm);
 
             } else if (input.type === "email" && validateEmail(input)) {
+                nextSlide(parent, nextForm);
+
+
+            } else if (input.type === "radio" && validateGender(input)) {
                 nextSlide(parent, nextForm);
 
 
@@ -25,8 +29,11 @@ function animatedForm() {
             } else if (input.type === "radio" && validateIncome(input)) {
                 nextSlide(parent, nextForm);
 
+            } else if (input.type === "radio" && validateEnrolled(input)) {
+                nextSlide(parent, nextForm);
 
-            } else if (input.type === "radio" && validateGender(input)) {
+
+            } else if (input.type === "date" && validateBirth(input)) {
                 nextSlide(parent, nextForm);
 
 
@@ -64,8 +71,13 @@ function validateUser(user) {
     }
 }
 
+
+
+
 function validateEmail(email) {
-    const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    var validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (validation.test(email.value)) {
         error("rgb(101, 109, 255)");
         progress.value = 50;
@@ -75,6 +87,26 @@ function validateEmail(email) {
     } else {
         error("rgb(189, 87, 87)");
         console.log("email is not up and running");
+        return false;
+    }
+}
+
+
+
+
+function validateGender(gender) {
+
+    var gender = document.getElementsByName('gender');
+
+    if (!(gender[0].checked || gender[1].checked)) {
+        error("rgb(101, 109, 255)");
+        progress.value = 100;
+        statusProgress.innerHTML = `<span class="percentage">100% </span>Completed`;
+        console.log("gender is up and running");
+        return true;
+    } else {
+        error("rgb(189, 87, 87)");
+        console.log("gender is not up and running");
         return false;
     }
 }
@@ -102,6 +134,8 @@ function validateCoverage(coverage) {
 
 
 
+
+
 function validateIncome(income) {
 
     var income = document.getElementsByName('income');
@@ -123,19 +157,21 @@ function validateIncome(income) {
 
 
 
-function validateGender(gender) {
 
-    var gender = document.getElementsByName('gender');
 
-    if (!(gender[0].checked || gender[1].checked)) {
+function validateEnrolled(enrolled) {
+
+    var enrolled = document.getElementsByName('enrolled');
+
+    if (!(enrolled[0].checked || enrolled[1].checked)) {
         error("rgb(101, 109, 255)");
-        progress.value = 100;
-        statusProgress.innerHTML = `<span class="percentage">100% </span>Completed`;
-        console.log("gender is up and running");
+        progress.value = 75;
+        statusProgress.innerHTML = `<span class="percentage">75% </span>Completed`;
+        console.log("enrolled is up and running");
         return true;
     } else {
         error("rgb(189, 87, 87)");
-        console.log("gender is not up and running");
+        console.log("enrolled is not up and running");
         return false;
     }
 }
@@ -143,18 +179,46 @@ function validateGender(gender) {
 
 
 
-function nextSlide(parent, nextForm) {
-    parent.classList.add('innactive');
-    parent.classList.remove('active');
-    nextForm.classList.add('active');
+function validateBirth(date) {
+
+    var validationBirth = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/;
+
+    if (!(validationBirth.test(date.value))) {
+        error("rgb(101, 109, 255)");
+        progress.value = 100;
+        statusProgress.innerHTML = `<span class="percentage">100% </span>Completed`;
+        console.log("birth is up and running");
+        return true;
+
+    } else {
+        error("rgb(189, 87, 87)");
+        console.log("birth is not up and running");
+        return false;
+    }
 }
 
-function error(color) {
-    document.body.style.background = color;
-}
-
-animatedForm();
-
-console.log(" hello andrew ");
 
 
+
+
+
+
+
+
+
+
+
+
+    function nextSlide(parent, nextForm) {
+        parent.classList.add('innactive');
+        parent.classList.remove('active');
+        nextForm.classList.add('active');
+    }
+
+    function error(color) {
+        document.body.style.background = color;
+    }
+
+    animatedForm();
+
+    console.log(" hello andrew ");
