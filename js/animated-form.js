@@ -63,7 +63,7 @@ function validateUser(user) {
         console.log("user is not up and running");
         return false;
     } else {
-        error("#fff");
+        error("#fafafa");
         progress.value = 10;
         statusProgress.innerHTML = `<span class="percentage">10% </span>Completed`;
         console.log("user is up and running");
@@ -79,7 +79,7 @@ function validateEmail(email) {
     var validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (validation.test(email.value)) {
-        error("#fff");
+        error("#fafafa");
         progress.value = 20;
         statusProgress.innerHTML = `<span class="percentage">20% </span>Completed`;
         console.log("email is up and running");
@@ -93,13 +93,12 @@ function validateEmail(email) {
 
 
 
-
 function validateGender(gender) {
 
     var gender = document.getElementsByName('gender');
 
     if (!(gender[0].checked || gender[1].checked)) {
-        error("#fff");
+        error("#fafafa");
         progress.value = 30;
         statusProgress.innerHTML = `<span class="percentage">30% </span>Completed`;
         console.log("gender is up and running");
@@ -119,7 +118,7 @@ function validateCoverage(coverage) {
     var coverage = document.getElementsByName('coverage');
 
     if (!(coverage[0].checked || coverage[1].checked)) {
-        error("#fff");
+        error("#fafafa");
         progress.value = 40;
         statusProgress.innerHTML = `<span class="percentage">40% </span>Completed`;
         console.log("coverage is up and running");
@@ -141,7 +140,7 @@ function validateIncome(income) {
     var income = document.getElementsByName('income');
 
     if (!(income[0].checked || income[1].checked)) {
-        error("#fff");
+        error("#fafafa");
         progress.value = 50;
         statusProgress.innerHTML = `<span class="percentage">50% </span>Completed`;
         console.log("income is up and running");
@@ -164,7 +163,7 @@ function validateEnrolled(enrolled) {
     var enrolled = document.getElementsByName('enrolled');
 
     if (!(enrolled[0].checked || enrolled[1].checked)) {
-        error("#fff");
+        error("#fafafa");
         progress.value = 60;
         statusProgress.innerHTML = `<span class="percentage">60% </span>Completed`;
         console.log("enrolled is up and running");
@@ -209,16 +208,16 @@ function validateBirth(date) {
 
 
 
-    function nextSlide(parent, nextForm) {
-        parent.classList.add('innactive');
-        parent.classList.remove('active');
-        nextForm.classList.add('active');
-    }
+function nextSlide(parent, nextForm) {
+    parent.classList.add('innactive');
+    parent.classList.remove('active');
+    nextForm.classList.add('active');
+}
 
-    function error(color) {
-        document.body.style.background = color;
-    }
+function error(color) {
+    document.body.style.background = color;
+}
 
-    animatedForm();
+animatedForm();
 
-    console.log(" hello andrew ");
+console.log(" hello andrew ");

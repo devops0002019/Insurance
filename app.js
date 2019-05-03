@@ -3,7 +3,7 @@ document.documentElement.style .setProperty('--secondary', '#b3cde0');
 document.documentElement.style .setProperty('--tertiary', '#FAFAFA');
 document.documentElement.style .setProperty('--quaternary', '#0903cf');
 document.documentElement.style .setProperty('--border', '#d8d8d8');
-document.documentElement.style .setProperty('--page-max-width', '1024px');
+document.documentElement.style .setProperty('--page-max-width', '11268px');
 document.documentElement.style .setProperty('--navbar-background', 'var(--white)');
 document.documentElement.style .setProperty('--navbar-text-color', 'var(--primary)');
 document.documentElement.style .setProperty('--header-background', '#fff');
@@ -24,14 +24,14 @@ const navbar_data = [
 
 function navbar_template(navbar) {
    return `
-    <ul class="menu-list">
-        <li><a href="/#" class="brand"><h1>${navbar.brand}</h1></a></li>
-        <li><a href="/#" class="brand"><img src="img/logo.png" alt="Logo" height="42" width="42"></a></li>
-    </ul>
+    <div class="flex-space-between">
+        <a href="/#" class="brand"><h1> ${navbar.brand}</h1></a>
+        <a href="/#"><img src="img/logo.png" alt="Logo" height="42" width="42"></a>
+    </div>
  `;
 }
 
-document.getElementById("navbar-empty").innerHTML = `${navbar_data.map(navbar_template).join('')}`;
+document.getElementById("navbar").innerHTML = `${navbar_data.map(navbar_template).join('')}`;
 
 
 const footer_data = [
@@ -44,7 +44,7 @@ function footer_template(foot) {
     <div class="footer">
      <div class="grid set-cols-1">
        <div class="column">
-         <h2 class="copyright"> Copyright<a href="/#"> ${foot.brand} </a>. All rights reserved <span id="year"></span> </h2>
+         <h2 class="copyright"> Copyright<a href="/#"> ${foot.brand}</a>. All rights reserved <span id="year"></span> </h2>
        </div>
      </div>
     </div>

@@ -1,17 +1,9 @@
-/* html {
-    overflow-y: scroll;
-    min-height: 500px;
-    height: 50vh;
-} */
-
 
 #site {
     background: #fafafa;
     -webkit-transition: background 0.5s ease;
     transition: background 0.5s ease;
-    /* min-height: 500px; */
-    /* height: 100vh; */
-    /* max-height: 100vh; */
+
 
 }
 
@@ -354,4 +346,6 @@ progress::-webkit-progress-value {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+
 
