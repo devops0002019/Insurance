@@ -1,7 +1,7 @@
-document.documentElement.style .setProperty('--primary', '#005b96');
+document.documentElement.style .setProperty('--primary', '#0973cf');
 document.documentElement.style .setProperty('--secondary', '#b3cde0');
 document.documentElement.style .setProperty('--tertiary', '#FAFAFA');
-document.documentElement.style .setProperty('--quaternary', '#59cee7');
+document.documentElement.style .setProperty('--quaternary', '#0903cf');
 document.documentElement.style .setProperty('--border', '#d8d8d8');
 document.documentElement.style .setProperty('--page-max-width', '1024px');
 document.documentElement.style .setProperty('--navbar-background', '#fff');

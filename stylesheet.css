@@ -258,7 +258,8 @@ progress:after {
 
 progress::-moz-progress-bar {
     border-radius: 12px;
-    background: #FFF;
+    background: #ddd;
+    
     box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
 
 }
@@ -266,7 +267,7 @@ progress::-moz-progress-bar {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     progress {
         border-radius: 12px;
-        background: #ffffff;
+        background: #ddd;
         height: 10px;
     }
 }
