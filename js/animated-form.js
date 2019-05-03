@@ -9,7 +9,7 @@ function animatedForm() {
             const parent = arrow.parentElement;
             const nextForm = parent.nextElementSibling;
 
-
+    
 
             if (input.type === "text" && validateUser(input)) {
                 nextSlide(parent, nextForm);
@@ -19,6 +19,10 @@ function animatedForm() {
 
 
             } else if (input.type === "radio" && validateCoverage(input)) {
+                nextSlide(parent, nextForm);
+
+
+            } else if (input.type === "radio" && validateIncome(input)) {
                 nextSlide(parent, nextForm);
 
 
@@ -94,6 +98,27 @@ function validateCoverage(coverage) {
         return false;
     }
 }
+
+
+
+
+function validateIncome(income) {
+
+    var income = document.getElementsByName('income');
+
+    if (!(income[0].checked || income[1].checked)) {
+        error("rgb(101, 109, 255)");
+        progress.value = 75;
+        statusProgress.innerHTML = `<span class="percentage">75% </span>Completed`;
+        console.log("income is up and running");
+        return true;
+    } else {
+        error("rgb(189, 87, 87)");
+        console.log("income is not up and running");
+        return false;
+    }
+}
+
 
 
 

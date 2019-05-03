@@ -18,14 +18,14 @@ document.documentElement.style .setProperty('--seo-page-title-color', 'blue');
 
 const navbar_data = [
    {
-       phone:    "(555)555-5555",
    }
 ];
+
 function navbar_template(navbar) {
    return `
     <ul class="menu-list">
-        <li><a href="#" class="brand"><i class="fas fa-band-aid fa-4x color-secondary"></i></a></li>
-        <li><h3>${navbar.phone}</h3></li>
+        <li><a href="#" class="brand"><h1>Insurance</h1></a></li>
+        <li><a href="#" class="brand"><img src="img/logo.png" alt="Logo" height="42" width="42"></a></li>
     </ul>
  `;
 }
