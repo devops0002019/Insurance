@@ -1,7 +1,11 @@
 /*
 main classes
 ------------------------------------------------------------------------*/
-
+.page-max-width {
+	width: 100%;
+	max-width: var(--page-max-width);
+	margin: auto;
+}
 
 .section {
 	--section-padding: 64px 0px;

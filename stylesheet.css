@@ -210,7 +210,10 @@ i.icon-start {
 }
 
 /*styles home*/
-
+[class*="column"].insurance101 {
+    width: 100%;
+    max-width: 1024px;
+}
 [class*="column"].insurance101>div {
     margin: 32px 0px;
 }
