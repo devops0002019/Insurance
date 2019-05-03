@@ -140,8 +140,8 @@ div.active {
 
 }
 
-.input-radio input[type="radio"]:checked + label,
-.Checked + label {
+.input-radio input[type="radio"]:checked+label,
+.Checked+label {
     background: green;
 
 
@@ -219,7 +219,7 @@ i.icon-start {
 
 /*styles home*/
 
-[class*="column"].insurance101 > div {
+[class*="column"].insurance101>div {
     margin: 32px 0px;
 }
 
@@ -244,9 +244,9 @@ i.icon-start {
 
 
 
-     .small-img {
-            max-width: 200px !important;
-        }
+.small-img {
+    max-width: 200px !important;
+}
 
 #form {
     position: absolute;
@@ -263,7 +263,7 @@ progress:after {
 progress::-moz-progress-bar {
     border-radius: 12px;
     background: #ddd;
-    
+
     box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
 
 }
@@ -305,12 +305,12 @@ progress::-webkit-progress-value {
         opacity: 0
     }
 
-    
+
     50% {
         opacity: 1
     }
 
-    
+
     100% {
         opacity: 9
     }
@@ -319,4 +319,39 @@ progress::-webkit-progress-value {
 
 
 
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 128px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* background: rgb(255, 255, 255); */
+
+
+}
+
+
+.wrapper {
+    z-index: 999999999 !important;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 

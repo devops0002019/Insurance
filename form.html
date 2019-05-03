@@ -24,72 +24,20 @@
 
 
     <style>
+        #navbar {
+            position: absolute;
+            bottom: -32%;
+            left: 0;
+            right: 0;
+        }
 
+        #footer {
+            position: absolute;
+            bottom: -32%;
+            left: 0;
+            right: 0;
 
-
-
-.progress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 128px;
-    position: absolute;
-    top: 50%;
-    left:15%;
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    padding: 100px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    /* background: rgb(255, 255, 255); */
-
-
-}
-
-
-.wrapper {
-    z-index: 999999999 !important;
-    overflow: hidden;
-    /* border:10px solid red; */
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-    padding: 100px;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-#forma {
-/* border: 2px solid red;
-position: absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height: 100vh; */
-}
-
-#navbar 
-{
-    position: absolute;
-    bottom:-32%;
-    left:0;
-    right:0;
-}
-
-#footer {
-    position: absolute;
-    bottom:-32%;
-    left:0;
-    right:0;
-
-}
-
+        }
     </style>
 
 </head>
@@ -102,13 +50,10 @@ position: absolute;
 
         <form id="forma" action="thankyou.html" method="GET" data-netlify-recaptcha="true" data-netlify="true">
 
-
             <div class="progress">
                 <h3 id="status"><span class="percentage">1% </span>Completed</h3>
                 <progress id="progressBar" value="0" max="100"></progress>
             </div>
-
-
 
             <div class="field-username input-text">
                 <p class="question">What is your name?</p>
@@ -117,18 +62,12 @@ position: absolute;
                 <i id="plus" class="fas fa-arrow-down enter-next"></i>
             </div>
 
-
-
-
             <div class="field-email input-text innactive">
                 <p class="question">What is your Email?</p>
                 <i class="fas fa-envelope icon-start"></i>
                 <input type="email" placeholder="Email" required />
                 <i id="plus" class="fas fa-arrow-down enter-next"></i>
             </div>
-
-
-
 
             <div class="field-gender input-radio innactive">
                 <p class="question">What is your Gender?</p>
@@ -137,7 +76,6 @@ position: absolute;
                 <input id="female" type="radio" value="female" name="gender" required />
                 <label for="female" id="plus" class="enter-next">Female</label>
             </div>
-
 
             <div class="field-coverage input-radio innactive">
                 <p class="question">When would you like coverage?</p>
@@ -148,8 +86,6 @@ position: absolute;
                 <input id="notsure" type="radio" value="notsure" name="coverage" required />
                 <label for="notsure" id="plus" class="enter-next">Not sure</label>
             </div>
-
-
 
             <div class="field-income input-radio innactive">
                 <p class="question">What is your total household income?</p>
@@ -163,9 +99,6 @@ position: absolute;
                 <label for="zero-sixteen" id="plus" class="enter-next">$0 - $16,000</label>
             </div>
 
-
-
-
             <div class="field-enrolled input-radio innactive">
                 <p class="question">Are you currently enrolled in Medicare Parts A or B?</p>
                 <input id="enrolled-yes" type="radio" value="enrolled-yes" name="enrolled" required />
@@ -176,8 +109,6 @@ position: absolute;
                 <label for="enrolled-unsure" id="plus" class="enter-next">Unsure</label>
             </div>
 
-
-
             <div class="field-birth input-text innactive">
                 <p class="question">What is your date of birth?</p>
                 <i class="fas fa-user-edit icon-start"></i>
@@ -185,21 +116,16 @@ position: absolute;
                 <i id="plus" class="fas fa-arrow-down enter-next"></i>
             </div>
 
-
-
             <div class="field-submit input-submit innactive">
                 <input id="submit" type="submit" />
             </div>
 
-
         </form>
-
-
     </div>
 
-
-
     <footer id="footer"></footer>
+
+
 
     <script src="js/animated-form.js"></script>
 
