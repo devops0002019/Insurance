@@ -1,9 +1,8 @@
-html {
+/* html {
     overflow-y: scroll;
     min-height: 500px;
     height: 50vh;
-    /* max-height: 100vh; */
-}
+} */
 
 
 #site {
@@ -245,7 +244,9 @@ i.icon-start {
 
 
 
-
+     .small-img {
+            max-width: 200px !important;
+        }
 
 #form {
     position: absolute;
@@ -314,4 +315,8 @@ progress::-webkit-progress-value {
         opacity: 9
     }
 }
+
+
+
+
 
