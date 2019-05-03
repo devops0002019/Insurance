@@ -183,7 +183,7 @@ function validateBirth(date) {
     var validationBirth = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/;
 
     if (!(validationBirth.test(date.value))) {
-        error("#fff");
+        error("#fafafa");
         progress.value = 70;
         statusProgress.innerHTML = `<span class="percentage">70% </span>Completed`;
         console.log("birth is up and running");
